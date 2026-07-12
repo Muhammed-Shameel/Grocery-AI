@@ -30,3 +30,4 @@ class RAGPipeline():
             "source" : sources
             
         } 
+        
