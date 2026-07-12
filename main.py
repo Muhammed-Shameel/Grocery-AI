@@ -1,22 +1,12 @@
-from backend.database.vector_database import VectorDatabase
-from backend.retrieval.retriever import Retriever
-from backend.prompt_builder.prompt import PromptBuilder
-from backend.llm.llm import LLM
+from google import genai
+import os
+from dotenv import load_dotenv
 
-db = VectorDatabase()
-db.load_data()
+load_dotenv()
 
-retriever = Retriever(db)
+client = genai.Client(
+    api_key=os.getenv("GEMINI_API_KEY")
+)
 
-prompt_builder = PromptBuilder(retriever)
-
-llm = LLM()
-
-question = input("Ask a question: ")
-
-prompt = prompt_builder.build_prompt(question)
-
-answer = llm.generate(prompt)
-
-print(answer)
-
+for model in client.models.list():
+    print(model.name)

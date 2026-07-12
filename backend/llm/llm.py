@@ -9,7 +9,7 @@ class LLM:
 
     def __init__(
         self,
-        model_name="models/gemini-3.5-flash"
+        model_name="models/gemini-3-flash-preview"
     ):
         self.client = genai.Client(
             api_key=os.getenv("API_KEY")

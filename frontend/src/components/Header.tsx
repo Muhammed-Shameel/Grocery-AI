@@ -2,12 +2,10 @@ import React from 'react';
 
 export const Header: React.FC = () => {
   return (
-    <header className="p-6 text-center">
-      <h1 className="text-4xl font-bold text-white mb-2">🥦 Grocery AI</h1>
-      <p className="text-xl text-gray-400 font-medium">Nutrition Knowledge Assistant</p>
-      <p className="text-sm text-gray-500 mt-2">
-        Ask questions about nutrition, food storage, protein, fruits, vegetables, and grocery products.
-      </p>
+    <header className="p-6 pb-2 text-center border-b border-gray-800/50">
+      <h1 className="text-3xl font-extrabold text-white mb-1 tracking-tight"> Grocery AI</h1>
+      <p className="text-sm text-green-400 font-semibold uppercase tracking-wider">Nutrition Knowledge Assistant</p>
     </header>
   );
 };
+
