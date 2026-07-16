@@ -21,8 +21,8 @@ export const ChatWindow: React.FC<Props> = ({ messages, isLoading }) => {
       ))}
       {isLoading && (
         <div className="flex justify-start my-4">
-          <div className="bg-gray-800 text-gray-400 p-4 rounded-2xl rounded-bl-none text-sm animate-pulse">
-            Thinking...
+          <div className="bg-gray-900 border border-gray-800 text-gray-400 p-4 rounded-2xl rounded-bl-none text-sm animate-pulse">
+            Grocery AI is thinking...
           </div>
         </div>
       )}

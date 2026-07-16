@@ -14,5 +14,5 @@ export interface Message {
 export interface ChatResponse {
   question: string;
   answer: string;
-  source: Source[];
+  sources: Source[];
 }

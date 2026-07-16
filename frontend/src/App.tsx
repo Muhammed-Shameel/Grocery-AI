@@ -8,7 +8,7 @@ function App() {
   const { messages, sendMessage, isLoading, error } = useChat();
 
   return (
-    <div className="flex flex-col h-screen bg-black text-gray-100 font-sans">
+    <div className="flex flex-col h-screen text-gray-100 font-sans">
       <div className="fixed inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-900/20 via-black to-black -z-10" />
       <Header />
       <ChatWindow messages={messages} isLoading={isLoading} />

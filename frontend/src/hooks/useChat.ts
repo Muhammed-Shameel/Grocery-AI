@@ -37,9 +37,9 @@ export const useChat = () => {
         id: (Date.now() + 1).toString(),
         role: 'assistant',
         content: data.answer,
-        sources: data.source.map((s) => ({
-          title: s.title,
-          source: s.source,
+        sources: (data.sources || []).map((s) => ({
+          title: s.article,
+          source: s.section,
           score: s.score,
         })),
       };

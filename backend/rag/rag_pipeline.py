@@ -20,14 +20,14 @@ class RAGPipeline():
 
         for chunk, score in top_chunks:
             sources.append({
-                "title": chunk["title"],
-                "source": chunk["source"],
+                "article": chunk["article"],
+                "section": chunk["section"],
                 "score": score
             })
         return {
             "question": question,
             "answer" : answer,
-            "source" : sources
+            "sources" : sources
             
         } 
         

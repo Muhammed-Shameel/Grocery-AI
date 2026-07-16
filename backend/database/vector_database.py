@@ -1,7 +1,7 @@
 import json
 
 class VectorDatabase():
-    def __init__(self, path="data/processed/chunks.json"):
+    def __init__(self, path="data/processed/wiki_chunks.json"):
         self.chunks = []
         self.path = path
     
@@ -25,7 +25,7 @@ class VectorDatabase():
     
     def delete_chunk(self, chunk_id):
         for chunk in self.chunks:
-            if chunk_id == chunk["id"]:
+            if chunk_id == chunk["chunk_id"]:
                 self.chunks.remove(chunk)
                 break
 
@@ -34,7 +34,7 @@ class VectorDatabase():
     
     def get_chunk(self, chunk_id):
         for chunk in self.chunks:
-            if chunk_id == chunk["id"]:
+            if chunk_id == chunk["chunk_id"]:
                 return chunk
         else:
             return None
