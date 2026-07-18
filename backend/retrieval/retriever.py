@@ -22,7 +22,7 @@ class Retriever:
 
         return float(np.dot(e_i, e_j) / denominator)
 
-    def retrieve(self, question, top_k=5):
+    def retrieve(self, question, top_k=20):
 
         query_embedding = model.encode(
             question,

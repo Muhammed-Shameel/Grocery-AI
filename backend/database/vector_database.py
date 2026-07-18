@@ -1,7 +1,7 @@
 import json
 
 class VectorDatabase():
-    def __init__(self, path="data/processed/wiki_chunks.json"):
+    def __init__(self, path="data/chunk_factory/all_chunks.json"):
         self.chunks = []
         self.path = path
     

@@ -1,142 +1,312 @@
 import os
 import json
+
 from sentence_transformers import SentenceTransformer
 
-model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
 
-input_dir = "data_pipeline/clean/wiki"
+class ChunkFactory:
 
-documents = []
+    def __init__(
+        self,
+        input_dir,
+        model,
+        min_words=100,
+        max_words=500,
+        source_type=None
+    ):
 
-for filename in os.listdir(input_dir):
-    
-    if not filename.endswith(".json"):
-        continue
-    
-    input_path = os.path.join(input_dir, filename)
-    
-    with open(input_path, "r", encoding="utf-8") as f:
-        article = json.load(f)
-        
-    article_title = article["title"]
-    
-    for section in article["sections"]:
-        
-        documents.append({
-            "article": article_title,
-            "section": section["title"],
-            "text": section["text"]
-        })
-        
-        
-        
-def join_sections(documents, min_words=100):
+        self.input_dir = input_dir
 
-    joined_documents = []
+        self.model = model
 
-    i = 0
+        self.min_words = min_words
 
-    while i < len(documents):
+        self.max_words = max_words
 
-        current = documents[i]
+        self.source_type = source_type
 
-        word_count = len(current["text"].split())
+        self.documents = []
 
-        if word_count >= min_words:
+        self.joined_documents = []
 
-            joined_documents.append(current)
+        self.chunks = []
 
-            i += 1
 
-        else:
+    # --------------------------------------------------
+    # 1. Load documents
+    # --------------------------------------------------
 
-            if (
-                i + 1 < len(documents)
-                and documents[i + 1]["article"] == current["article"]
-            ):
+    def load_documents(self):
 
-                next_document = documents[i + 1]
+        for filename in os.listdir(self.input_dir):
 
-                joined_document = {
-                    "article": current["article"],
+            if not filename.endswith(".json"):
 
-                    "section": [
-                        current["section"],
-                        next_document["section"]
-                    ],
+                continue
 
-                    "text": (
-                        current["text"]
-                        + "\n\n"
-                        + next_document["text"]
-                    )
-                }
 
-                joined_documents.append(joined_document)
+            input_path = os.path.join(
+                self.input_dir,
+                filename
+            )
 
-                i += 2
 
-            else:
+            with open(
+                input_path,
+                "r",
+                encoding="utf-8"
+            ) as f:
+
+                article = json.load(f)
+
+
+            article_title = article["title"]
+
+
+            for section in article["sections"]:
+
+                self.documents.append({
+
+                    "source_type": self.source_type,
+
+                    "source": input_path,
+
+                    "article": article_title,
+
+                    "section": section["title"],
+
+                    "text": section["text"]
+
+                })
+
+
+        return self
+
+
+    # --------------------------------------------------
+    # 2. Join short sections
+    # --------------------------------------------------
+
+    def join_sections(self):
+
+        joined_documents = []
+
+        i = 0
+
+
+        while i < len(self.documents):
+
+            current = self.documents[i]
+
+
+            word_count = len(
+                current["text"].split()
+            )
+
+
+            # Section is large enough
+            if word_count >= self.min_words:
 
                 joined_documents.append(current)
 
                 i += 1
 
-    return joined_documents
+                continue
 
 
-def split_section(document, max_words=500):
+            # Section is too small
+            if (
 
-    words = document["text"].split()
+                i + 1 < len(self.documents)
 
-    chunks = []
+                and self.documents[i + 1]["article"]
 
-    for i in range(0, len(words), max_words):
+                == current["article"]
 
-        chunk_words = words[i:i + max_words]
+            ):
 
-        chunks.append({
-            "article": document["article"],
-            "section": document["section"],
-            "text": " ".join(chunk_words)
-        })
-
-    return chunks
+                next_document = self.documents[i + 1]
 
 
-joined_documents = join_sections(documents)
+                joined_document = {
 
-all_chunks = []
+                    "source_type": current["source_type"],
 
-for document in joined_documents:
+                    "source": current["source"],
 
-    section_chunks = split_section(document)
+                    "article": current["article"],
 
-    all_chunks.extend(section_chunks)
+                    "section": [
 
-for chunk in all_chunks:
+                        current["section"],
 
-    embedding = model.encode(
-        chunk["text"]
-    ).tolist()
+                        next_document["section"]
 
-    chunk["embedding"] = embedding
+                    ],
 
-for chunk_id, chunk in enumerate(all_chunks, start=1):
-    chunk["chunk_id"] = chunk_id
+                    "text": (
 
-# Save chunks with embeddings
-output_path = "data/processed/wiki_chunks.json"
+                        current["text"]
 
-with open(output_path, "w", encoding="utf-8") as f:
+                        + "\n\n"
 
-    json.dump(
-        all_chunks,
-        f,
-        ensure_ascii=False,
-        indent=4
-    )
+                        + next_document["text"]
+
+                    )
+
+                }
 
 
-print("Embeddings created and saved successfully.")
-print("Total chunks:", len(all_chunks))
+                joined_documents.append(
+                    joined_document
+                )
+
+
+                i += 2
+
+
+            else:
+
+                joined_documents.append(
+                    current
+                )
+
+                i += 1
+
+
+        self.joined_documents = joined_documents
+
+
+        return self
+
+
+    # --------------------------------------------------
+    # 3. Split into chunks
+    # --------------------------------------------------
+
+    def split_section(self, document):
+
+        words = document["text"].split()
+
+
+        chunks = []
+
+
+        for i in range(
+
+            0,
+
+            len(words),
+
+            self.max_words
+
+        ):
+
+
+            chunk_words = words[
+
+                i:i + self.max_words
+
+            ]
+
+
+            chunks.append({
+
+                "source_type": document["source_type"],
+
+                "source": document["source"],
+
+                "article": document["article"],
+
+                "section": document["section"],
+
+                "text": " ".join(chunk_words)
+
+            })
+
+
+        return chunks
+
+
+    # --------------------------------------------------
+    # 4. Create all chunks
+    # --------------------------------------------------
+
+    def create_chunks(self):
+
+        all_chunks = []
+
+
+        for document in self.joined_documents:
+
+            section_chunks = (
+
+                self.split_section(document)
+
+            )
+
+
+            all_chunks.extend(
+                section_chunks
+            )
+
+
+        self.chunks = all_chunks
+
+
+        return self
+
+
+    # --------------------------------------------------
+    # 5. Create embeddings
+    # --------------------------------------------------
+
+    def create_embeddings(self):
+
+        for chunk in self.chunks:
+
+
+            embedding = self.model.encode(
+
+                chunk["text"]
+
+            ).tolist()
+
+
+            chunk["embedding"] = embedding
+
+
+        return self
+
+
+    # --------------------------------------------------
+    # 6. Get chunks
+    # --------------------------------------------------
+
+    def get_chunks(self):
+
+        return self.chunks
+
+
+    # --------------------------------------------------
+    # 7. Run complete pipeline
+    # --------------------------------------------------
+
+    def process(self):
+
+        (
+
+            self
+
+            .load_documents()
+
+            .join_sections()
+
+            .create_chunks()
+
+            .create_embeddings()
+
+        )
+
+
+        return self
