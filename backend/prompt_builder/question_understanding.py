@@ -1,39 +1,91 @@
 import re
 
 class QuestionUnderstanding():
+
     def __init__(self, question: str):
+
         self.org_question = question
         self.normalised_question = question
-    
+
+        # Results will be stored here after analyze()
+        self.intents = []
+        self.attributes = []
+        self.entities = []
+        self.operations = []
+        self.retrieval_query = ""
+        self.confidence = 0
+
+
     def question_normaliser(self):
+
         question = self.org_question.strip()
         question = question.lower()
         question = re.sub(r"\s+", " ", question)
+
         self.normalised_question = question
+
         return self
-    
+
+
     def detect_intent(self):
-        nutrient_keywords = ["protein", "calorie", "calories", "vitamin", "mineral", "nutrient", "fat", "carbohydrate"] 
-        storage_keywords = ["store", "storage","refrigerator","fridge", "shelf life", "keep"]
-        safety_keywords = ["safe", "unsafe", "expired", "spoil", "spoiled", "dangerous"]
+
+        nutrient_keywords = [
+            "protein",
+            "calorie",
+            "calories",
+            "vitamin",
+            "mineral",
+            "nutrient",
+            "fat",
+            "carbohydrate"
+        ]
+
+        storage_keywords = [
+            "store",
+            "storage",
+            "refrigerator",
+            "fridge",
+            "shelf life",
+            "keep"
+        ]
+
+        safety_keywords = [
+            "safe",
+            "unsafe",
+            "expired",
+            "spoil",
+            "spoiled",
+            "dangerous"
+        ]
 
         question = self.normalised_question
-        
+
         detected_intents = []
+
         words = question.split()
-        
+
         for word in words:
 
-            if word in nutrient_keywords and "nutrient" not in detected_intents:
+            if (
+                word in nutrient_keywords
+                and "nutrient" not in detected_intents
+            ):
                 detected_intents.append("nutrient")
 
-            if word in storage_keywords and "storage" not in detected_intents:
+            if (
+                word in storage_keywords
+                and "storage" not in detected_intents
+            ):
                 detected_intents.append("storage")
 
-            if word in safety_keywords and "safety" not in detected_intents:
+            if (
+                word in safety_keywords
+                and "safety" not in detected_intents
+            ):
                 detected_intents.append("safety")
 
         if not detected_intents:
+
             return ["general"]
 
         return detected_intents
@@ -318,72 +370,76 @@ class QuestionUnderstanding():
     
     def build_retrieval_query(self):
 
-        intents = self.detect_intent()
-
-        attributes = self.extract_attributes()
-
-        entities = self.extract_entity()
-
-        operation = self.determine_operation()
-
         retrieval_terms = (
-            entities
-            + attributes
-            + intents
+            self.entities
+            + self.attributes
+            + self.intents
         )
 
-        retrieval_query = " ".join(
+        self.retrieval_query = " ".join(
             retrieval_terms
         )
 
-        return retrieval_query
+        return self.retrieval_query
     
     def calculate_confidence(self):
 
-        intents = self.detect_intent()
-        attributes = self.extract_attributes()
-        entities = self.extract_entity()
-        operations = self.determine_operation()
-
         confidence = 0
 
-        if intents and intents != ["general"]:
+        if (
+            self.intents
+            and self.intents != ["general"]
+        ):
             confidence += 0.25
 
-        if attributes:
+        if self.attributes:
+
             confidence += 0.25
 
-        if entities:
+        if self.entities:
+
             confidence += 0.25
 
-        if operations and operations != ["general"]:
+        if (
+            self.operations
+            and self.operations != ["general"]
+        ):
             confidence += 0.25
 
-        return confidence
+        self.confidence = confidence
+
+        return self.confidence
+    
     def analyze(self):
 
+        # 1. Normalize the question
         self.question_normaliser()
 
-        intents = self.detect_intent()
+        # 2. Detect and store everything ONCE
+        self.intents = self.detect_intent()
 
-        attributes = self.extract_attributes()
+        self.attributes = (
+            self.extract_attributes()
+        )
 
-        entities = self.extract_entity()
+        self.entities = (
+            self.extract_entity()
+        )
 
-        operations = self.determine_operation()
+        self.operations = (
+            self.determine_operation()
+        )
 
-        retrieval_query = self.build_retrieval_query()
+        # 3. Build retrieval query using
+        # already stored values
+        self.retrieval_query = (
+            self.build_retrieval_query()
+        )
 
-        confidence = self.calculate_confidence()
+        # 4. Calculate confidence using
+        # already stored values
+        self.confidence = (
+            self.calculate_confidence()
+        )
 
-        return {
-            "original_question": self.org_question,
-            "normalised_question": self.normalised_question,
-            "intents": intents,
-            "attributes": attributes,
-            "entities": entities,
-            "operations": operations,
-            "retrieval_query": retrieval_query,
-            "confidence": confidence
-        }
-    
+        return self

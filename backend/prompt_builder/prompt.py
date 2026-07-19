@@ -3,11 +3,11 @@ class PromptBuilder:
     def __init__(self):
         pass
 
-    def build_context(self, top_chunks):
+    def build_context(self, selected_context):
 
         context = ""
 
-        for chunk, _ in top_chunks:
+        for chunk, _ in selected_context:
 
             context += (
                 f"{chunk['text']}\n\n"
@@ -15,42 +15,83 @@ class PromptBuilder:
 
         return context
 
-    def build_prompt(self, question, top_chunks):
+    def build_prompt(
+        self,
+        question,
+        selected_context,
+        question_understander
+    ):
+        
 
-        context = self.build_context(top_chunks)
+        context = self.build_context(
+            selected_context
+        )
+
+        intents = (
+            question_understander.intents
+        )
+
+        entities = (
+            question_understander.entities
+        )
+
+        attributes = (
+            question_understander.attributes
+        )
+
+        operation = (
+            question_understander.operations
+        )
 
         prompt = f"""
-        You are a Grocery AI Assistant that answers questions about food products, storage, nutrition, and grocery-related information.
+You are a Grocery AI Assistant that answers questions about food products, storage, nutrition, safety, preparation, and other grocery-related information.
 
-        Your task is to answer the user's question using ONLY the provided context.
+Your task is to answer the user's original question using ONLY the provided context.
 
-        Knowledge Rules:
-        - Use only information explicitly available in the context.
-        - Do not use outside knowledge, assumptions, or guesses.
-        - Do not invent missing information.
-        - If the context does not contain enough information to answer, reply exactly:
-        "I don't have enough information to answer that."
+QUESTION ANALYSIS:
+- Intent: {intents}
+- Entities: {entities}
+- Attributes: {attributes}
+- Operation: {operation}
 
-        Answering Rules:
-        - Answer directly and stay focused on the user's question.
-        - Automatically adjust the answer length based on the question:
-        - For simple questions, give a brief answer.
-        - For questions requiring explanation, comparison, or instructions, provide a more detailed answer.
-        - Always provide the shortest answer that fully satisfies the user's request.
-        - Avoid repeating information.
-        - Do not include unnecessary background information.
-        - Do not add related facts unless they help answer the question.
-        - If the user asks for a list, provide only the relevant items.
-        - If the user asks for a specific value, return only that value with minimal wording.
-        - Use bullet points when they improve readability.
+The question analysis is provided as guidance to help you understand what information is relevant. The original question is the actual request from the user.
 
-        Context:
-        {context}
+KNOWLEDGE RULES:
+- Use only information explicitly available in the provided context.
+- Do not use outside knowledge, assumptions, or guesses.
+- Do not invent missing information.
+- If the context does not contain enough information to answer the question, reply exactly:
+"I don't have enough information to answer that."
 
-        Question:
-        {question}
+OPERATION RULES:
+- For a lookup question, provide the requested information directly.
+- For a comparison question, clearly compare the requested entities or attributes.
+- For an instruction question, provide the relevant steps in a logical order.
+- For an explanation question, explain the reason using only information supported by the context.
+- For a safety question, clearly provide the relevant safety information supported by the context.
+- If multiple operations are detected, satisfy all relevant parts of the user's question.
 
-        Answer:
-        """
+ANSWERING RULES:
+- Answer the original question directly.
+- Stay focused on what the user asked.
+- Use the shortest answer that fully satisfies the request.
+- Adjust the answer length according to the complexity of the question.
+- Give brief answers for simple questions.
+- Give more detailed answers when explanation, comparison, or instructions are required.
+- Avoid repeating information.
+- Do not include unnecessary background information.
+- Do not add related facts unless they help answer the question.
+- If the user asks for a list, provide only the relevant items.
+- If the user asks for a specific value, return only that value with minimal wording.
+- Use bullet points when they improve readability.
+
+PROVIDED CONTEXT:
+{context}
+
+ORIGINAL USER QUESTION:
+{question}
+
+ANSWER:
+"""
 
         return prompt
