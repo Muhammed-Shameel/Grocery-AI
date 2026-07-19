@@ -1,20 +1,27 @@
 import re
 
-class QuestionUnderstanding():
+class QuestionUnderstanding:
 
-    def __init__(self, question: str):
+    def __init__(
+        self,
+        question: str,
+        llm_analyzer=None
+    ):
 
         self.org_question = question
         self.normalised_question = question
 
-        # Results will be stored here after analyze()
+        self.llm_analyzer = llm_analyzer
+
         self.intents = []
         self.attributes = []
         self.entities = []
         self.operations = []
+
         self.retrieval_query = ""
         self.confidence = 0
 
+        self.analysis_source = "rule_based"
 
     def question_normaliser(self):
 
@@ -393,11 +400,9 @@ class QuestionUnderstanding():
             confidence += 0.25
 
         if self.attributes:
-
             confidence += 0.25
 
         if self.entities:
-
             confidence += 0.25
 
         if (
@@ -406,16 +411,14 @@ class QuestionUnderstanding():
         ):
             confidence += 0.25
 
-        self.confidence = confidence
-
-        return self.confidence
+        return confidence
     
     def analyze(self):
 
-        # 1. Normalize the question
+        # 1. Normalize
         self.question_normaliser()
 
-        # 2. Detect and store everything ONCE
+        # 2. Rule-based analysis
         self.intents = self.detect_intent()
 
         self.attributes = (
@@ -430,16 +433,55 @@ class QuestionUnderstanding():
             self.determine_operation()
         )
 
-        # 3. Build retrieval query using
-        # already stored values
-        self.retrieval_query = (
-            self.build_retrieval_query()
-        )
-
-        # 4. Calculate confidence using
-        # already stored values
+        # 3. Calculate rule-based confidence
         self.confidence = (
             self.calculate_confidence()
+        )
+
+        # 4. Use LLM only if analysis is uncertain
+        if self.confidence < 0.5:
+
+            if self.llm_analyzer is not None:
+
+                llm_analysis = (
+                    self.llm_analyzer.analyze(
+                        self.normalised_question
+                    )
+                )
+
+                self.intents = (
+                    llm_analysis.get(
+                        "intents",
+                        self.intents
+                    )
+                )
+
+                self.attributes = (
+                    llm_analysis.get(
+                        "attributes",
+                        self.attributes
+                    )
+                )
+
+                self.entities = (
+                    llm_analysis.get(
+                        "entities",
+                        self.entities
+                    )
+                )
+
+                self.operations = (
+                    llm_analysis.get(
+                        "operations",
+                        self.operations
+                    )
+                )
+
+                self.analysis_source = "llm"
+
+        # 5. Build final retrieval query
+        self.retrieval_query = (
+            self.build_retrieval_query()
         )
 
         return self

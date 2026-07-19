@@ -1,7 +1,15 @@
+import os
 import json
 
 class VectorDatabase():
-    def __init__(self, path="data/chunk_factory/all_chunks.json"):
+    def __init__(self, path=None):
+        if path is None:
+            # Get the directory of the current file
+            base_dir = os.path.dirname(os.path.abspath(__file__))
+            # Construct the path to backend/data/chunk_factory/all_chunks.json
+            # The structure is backend/database/vector_database.py
+            # So ../data/chunk_factory/all_chunks.json
+            path = os.path.join(base_dir, '..', 'data', 'chunk_factory', 'all_chunks.json')
         self.chunks = []
         self.path = path
     

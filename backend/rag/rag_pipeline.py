@@ -4,45 +4,77 @@ from prompt_builder.prompt import PromptBuilder
 from retrieval.retriever import Retriever
 from prompt_builder.question_understanding import QuestionUnderstanding
 from retrieval.context_selector import ContextSelector
+from prompt_builder.llm_analyser import LLMQuestionAnalyzer
 
 
-class RAGPipeline():
+class RAGPipeline:
 
     def __init__(self):
 
         self.db = VectorDatabase()
 
         self.db.load_data()
-        
-        self.retriever = Retriever(self.db)
-
-        self.prompt_builder = PromptBuilder()
 
         self.llm = LLM()
 
-
-    def ask(self, question):
-        
-        question_understander = QuestionUnderstanding(question)
-        
-        question_understander.analyze()
-        
-        retrieval_query = question_understander.retrieval_query
-
-        top_chunks = self.retriever.retrieve(retrieval_query)
-        
-        context_selector = ContextSelector(top_chunks, question_understander)
-        
-        selected_context = context_selector.select_context()
-
-        prompt = self.prompt_builder.build_prompt(
-            question,
-            selected_context,
-            question_understander
+        self.llm_analyzer = (
+            LLMQuestionAnalyzer(
+                self.llm
+            )
         )
 
-        answer = self.llm.generate(prompt)
+        self.retriever = Retriever(
+            self.db
+        )
 
+        self.prompt_builder = (
+            PromptBuilder()
+        )
+
+
+    def ask(self, question):
+
+        question_understander = (
+            QuestionUnderstanding(
+                question,
+                self.llm_analyzer
+            )
+        )
+
+        question_understander.analyze()
+
+        retrieval_query = (
+            question_understander.retrieval_query
+        )
+
+        top_chunks = (
+            self.retriever.retrieve(
+                retrieval_query
+            )
+        )
+
+        context_selector = (
+            ContextSelector(
+                top_chunks,
+                question_understander
+            )
+        )
+
+        selected_context = (
+            context_selector.select_context()
+        )
+
+        prompt = (
+            self.prompt_builder.build_prompt(
+                question,
+                selected_context,
+                question_understander
+            )
+        )
+
+        answer = (
+            self.llm.generate(prompt)
+        )
         sources = []
 
         for chunk, score in selected_context:

@@ -7,12 +7,12 @@ class ContextSelector:
         self.question_analysis = question_analysis
 
 
-    def select_top_k(self, chunks, top_k=8):
+    def select_top_k(self, chunks, top_k=7):
 
         return chunks[:top_k]
 
 
-    def filter_by_score(self, chunks, min_score=0.75):
+    def filter_by_score(self, chunks, min_score=0.62):
 
         filtered_chunks = []
 
