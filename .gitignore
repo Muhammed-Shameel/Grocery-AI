@@ -1,8 +1,26 @@
-backend/.env
+# Environment and Secrets
+.env
 .venv/
+.env.local
+
+# Python artifacts
 __pycache__/
+*.pyc
+*.pyo
+
+# IDE/Editor
 .ipynb_checkpoints/
 .vscode/
-data/raw/
-data/processed/
-backend/making_chunks.ipynb
+.idea/
+
+# Backend Data Pipeline & Storage (Generated data)
+backend/data_pipeline/clean/
+backend/data/chunk_factory/
+
+# Frontend
+frontend/dist/
+frontend/node_modules/
+frontend/.DS_Store
+
+# Misc
+.DS_Store

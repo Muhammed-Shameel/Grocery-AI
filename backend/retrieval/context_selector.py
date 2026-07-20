@@ -7,13 +7,16 @@ class ContextSelector:
         self.question_analysis = question_analysis
 
 
-    def select_top_k(self, chunks, top_k=7):
+    def select_top_k(self, chunks, top_k=15):
 
         return chunks[:top_k]
 
 
-    def filter_by_score(self, chunks, min_score=0.62):
-
+    def filter_by_score(self, chunks, min_score=0.35):
+        """
+        Permissive score filtering to ensure relevant context is captured,
+        relying on later stages for ranking.
+        """
         filtered_chunks = []
 
         for chunk, score in chunks:
@@ -77,6 +80,20 @@ class ContextSelector:
         return filtered_chunks_by_attributes
 
 
+    def filter_by_category(self, chunks):
+        """Prioritize sections that match the preferred categories from question analysis."""
+        preferred = self.question_analysis.preferred_categories
+        if not preferred or "general_food_science" in preferred:
+            return chunks
+        
+        filtered = []
+        for chunk, score in chunks:
+            if chunk.get("category") in preferred:
+                filtered.append((chunk, score * 1.2)) # Boost relevant categories
+            else:
+                filtered.append((chunk, score))
+        return sorted(filtered, key=lambda x: x[1], reverse=True)
+
     def select_context(self):
 
         chunks = self.select_top_k(
@@ -92,6 +109,10 @@ class ContextSelector:
         )
 
         chunks = self.filter_by_attributes(
+            chunks
+        )
+        
+        chunks = self.filter_by_category(
             chunks
         )
 

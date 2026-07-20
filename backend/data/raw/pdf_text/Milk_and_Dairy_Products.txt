@@ -1,0 +1,3450 @@
+10 Milk and Dairy Products
+10.1 Milk
+Milk is the secreted ﬂuid of the mammary glands
+of female mammals. It contains nearly all the nu-
+trients necessary to sustain life. Since the earliest
+times, mankind has used the milk of goats, sheep
+and cows as food. Today the term “milk” is syn-
+onymous with cow’s milk. The milk of other ani-
+mals is spelled out, e. g., sheep milk or goat milk,
+when supplied commercially.
+In Germany, the yield of milk per cow in kg/year
+has increased steadily as a result of selective
+breeding and improvements in feed. The yield
+was 1260 kg per cow in 1812, 2163 kg in 1926,
+3800 kg in the FRG in 1970, 4181 kg in 1977
+and 6537 kg in 2003. In the EU in 2003, Swedish
+cows were the best performers at 8073 kg, fol-
+lowed by Danish and Dutch animals at 7889 kg
+and 7494 kg respectively.
+In some countries it is permitted to increase the
+yield of milk by injection of the growth hor-
+mone bovine somatropin (BST). The recombi-
+nant BST (rBST) used is identical in activity to
+natural BST. This is done by taking, from the
+DNA of cows, the speciﬁc gene sequence that car-
+ries the instructions for preparing BST and insert-
+ing it into E. coli, which can then produce large
+amounts of rBST. Natural BST consists of 190
+or 191 amino acids. rBST may differ slightly in
+that a few extra amino acids may be attached at
+the N-terminal end of the BST molecule. Due
+to differences in the molecular mass it is possi-
+ble to distinguish between rBST and natural BST.
+Milk production in various countries, its process-
+ing into dairy products and its consumption are
+summarized in Tables 10.1–10.3.
+10.1.1 Physical and Physico-Chemical
+Properties
+Milk is a white or yellow-white, opaque liquid.
+The color is inﬂuenced by scattering and absorp-
+H.-D. Belitz · W. Grosch · P. Schieberle, Food Chemistry
+498
+© Springer 2009
+tion of light by milk fat globules and protein
+micelles. Therefore, skim milk also retains its
+white color. A yellowish, i. e. yellow-green, color
+is derived from carotene (ingested primarily
+during pasture grazing) present in the fat phase
+and from riboﬂavin present in the aqueous phase.
+Milk tastes mildly sweet, while its odor and
+ﬂavor are normally quite faint.
+Milk fat occurs in the form of droplets or glob-
+ules, surrounded by a membrane and emulsiﬁed
+in milk serum (also called whey). The fat globules
+(called cream) separate after prolonged storage or
+after centrifugation. The fat globules ﬂoat on the
+skim milk. Homogenization of milk so ﬁnely di-
+vides and emulsiﬁes the fat globules that cream
+separation does not occur even after prolonged
+standing.
+Proteins of various sizes are dispersed in milk
+serum. They are called micelles and consist
+mostly of calcium salts of casein molecules.
+Furthermore, milk contains lipoprotein particles,
+also called milk microsomes, which consist of
+the residues of cell membranes, microvilli, etc.,
+as well as somatic cells, which are mainly leuco-
+cytes (108/l of milk). Some of the properties of
+the main structural elements of milk are listed in
+Table 10.4.
+Various proteins, carbohydrates, minerals and
+other ingredients are solubilized in milk serum.
+The speciﬁc density of milk decreases with
+increasing
+fat
+content,
+and
+increases
+with
+increasing
+amounts
+of
+protein,
+milk
+sugar
+and salts. The speciﬁc density of cow’s milk
+ranges from 1.029 to 1.039 (15 ◦C). Defatted
+(skim) milk has a higher speciﬁc density than
+whole milk. From the relationships given by
+Fleischmann:
+m = 1.2f+ 266.5(s−1)
+s
+(10.1)
+and by Richmond:
+m = 0.25s+1.21f+0.66
+(10.2)
+Table 10.1. Production of milk, 2006 (1000 t)
+Continent
+Cow milk
+Buffalo milk
+Sheep milk
+Goat milk
+World
+549,693
+80,094
+8723
+13,801
+Africa
+24,674
+2300
+1719
+3129
+America, Central-
+14,179
+–
+–
+–
+America, North-
+90,564
+–
+–
+–
+America, South- and Caribbean
+66,030
+–
+36
+164
+Asia
+134,170
+77,571
+4006
+7821
+Europe
+209,441
+222
+2963
+2479
+Oceania
+24,814
+–
+–
+–
+10.1 Milk
+499
+500
+10 Milk and Dairy Products
+Table 10.2. Production of dairy products in 2004 (1000 t)
+Continent
+Cheese
+Buttera
+Condensed
+Whole milk
+Skim milk
+Whey
+milk
+powder
+powderb
+powder
+World
+17,824
+7968
+3892
+2702
+3455
+2038
+Africa
+915
+226
+64
+21
+11
+2
+America, North-, Central-
+4944
+646
+1112
+140
+796
+542
+America, South-
+668
+191
+377
+768
+64
+–
+Asia
+1090
+3678
+559
+83
+239
+4
+Europe
+9558
+2622
+1760
+946
+1699
+1386
+Oceania
+649
+605
+21
+744
+647
+105
+the dry matter content of milk, m, in percent,
+can be calculated from the percent fat content (f),
+knowing the speciﬁc density (s).
+The freezing point of milk is −0.53 to −0.55 ◦C.
+This rather constant value is a suitable test for de-
+tection of watering of milk.
+The pH of fresh milk is 6.5–6.75, while the acid
+degree according to Soxhlet–Henkel (◦SH) is 6.5–
+7.5.
+The refractive index (n20
+D ) is 1.3410–1.3480,
+and the speciﬁc conductivity at 25 ◦C is 4–
+5.5×10−3 ohm−1cm−1.
+Table 10.3. Consumption of milk and dairy products in
+FR Germany (in kg/capita and year)
+1996
+2003
+2005
+Consumer milk
+66.7
+66
+67
+Fresh milk products
+9.9
+12.2
+12
+(without yoghurt)
+Yoghurt
+13.1
+15.3
+16.8
+Cream and cream products
+7.6
+7.4
+7.4
+Butter
+7.3
+6.6
+6.5
+The measurement of redox potentials of milk
+and its products can also be of value. The redox
+potential is +0.30 V for raw and +0.10 V for
+pasteurized milk, +0.05 V for processed cheese,
+−0.15 V for yoghurt and −0.30 V for Emmental
+cheese.
+10.1.2 Composition
+The composition of dairy cattle milk varies to
+a fairly signiﬁcant extent. Table 10.5 provides
+some data. In all cases water is the main ingredi-
+ent of milk at 63–87%. In the following sections,
+only cow’s milk will be dealt with in detail since
+it is the main source of our dairy foods.
+10.1.2.1 Proteins
+In 1877 O. Hammarsten distinguished three
+proteins in milk: casein, lactalbumin and lac-
+toglobulin. He also outlined a procedure for their
+separation: skim milk is diluted then acidiﬁed
+with acetic acid. Casein ﬂocculates, while the
+Table 10.4. Main structural elements of milk
+Name
+Type of
+Percentage
+Number
+Diameter
+Surface
+Speciﬁc
+dispersion
+(1−1)
+(mm)
+(m2/l
+densitya
+Fat globules
+Emulsion
+3.8
+1013
+100–10,000
+70
+0.92
+Casein micelles
+Suspension
+2.8
+1017
+10–300
+4000
+1.11
+Globular proteins
+Colloidal
+0.6
+1020
+3–6
+5000
+1.34
+(whey proteins)
+solution
+Lipoprotein
+Colloidal
+particles
+suspension
+0.01
+1017
+10
+10
+1.10
+a 20 ◦C.
+Table 10.5. Composition of human milk and milk of
+various mammals (%)
+Milk
+Protein Casein Whey
+Sugar Fat
+Ash
+protein
+Human
+0.9a
+0.4
+0.5
+7.1
+4.5
+0.2
+Cow (bovine)
+3.2
+2.6
+0.6
+4.6
+3.9
+0.7
+Donkey
+2.0
+1.0
+1.0
+7.4
+1.4
+0.5
+Horse
+2.5
+1.3
+1.2
+6.2
+1.9
+0.5
+Camel
+3.6
+2.7
+0.9
+5.0
+4.0
+0.8
+Zebu
+3.2
+2.6
+0.6
+4.7
+4.7
+0.7
+Yak
+5.8
+4.6
+6.5
+0.9
+Buffalo
+3.8
+3.2
+0.6
+4.8
+7.4
+0.8
+Goat
+3.2
+2.6
+0.6
+4.3
+4.5
+0.8
+Sheep
+4.6
+3.9
+0.7
+4.8
+7.2
+0.9
+Reindeer
+10.1
+8.6
+1.5
+2.8
+18.0 1.5
+Cat
+7.0
+3.8
+3.2
+4.8
+4.8
+0.6
+Dog
+7.4
+4.8
+2.6
+Rabbit
+10.4
+a After the 15-th day of the breast feeding period the
+protein content is increased to 1.6%.
+whey proteins stay in solution. This established
+a speciﬁc property of casein: it is insoluble in
+weakly acidic media. It was later revealed that
+the milk protein system is much more complex.
+In 1936 Pedersen used ultra-centrifugation to
+demonstrate the nonhomogeneity of casein, while
+in 1939 Mellander used electrophoresis to prove
+that casein consists of three fractions, i. e. α-, β-
+and γ-casein. The most important proteins of milk
+are listed in Table 10.7. The casein fraction forms
+the main portion. Major constituents of whey
+proteins, β-lactoglobulin A and B and α-lactal-
+bumin, can be differentiated genetically. Other
+protein constituents, e. g., enzymes, are present
+in much lower quantities; they are not listed in
+Table 10.7.
+milk)
+(g/ml)
+10.1 Milk
+501
+502
+10 Milk and Dairy Products
+Table 10.6. Amino acid composition (g AA/100 g pro-
+tein) of the total protein, casein, and whey protein of
+bovine milk
+Amino acid
+Total
+Casein
+Whey
+protein
+protein
+Alanine
+3.7
+3.1
+5.5
+Arginine
+3.6
+4.1
+3.3
+Aspartic acid
+8.2
+7.0
+11.0
+Cystine
+0.8
+0.3
+3.0
+Glutamic acid
+22.8
+23.4
+15.5
+Glycine
+2.2
+2.1
+3.5
+Histidine
+2.8
+3.0
+2.4
+Isoleucine
+6.2
+5.7
+7.0
+Leucine
+10.4
+10.5
+11.8
+Lysine
+8.3
+8.2
+9.6
+Methionine
+2.9
+3.0
+2.4
+Phenylalanine
+5.3
+5.1
+4.2
+Proline
+10.2
+12.0
+4.4
+Serine
+5.8
+5.5
+5.5
+Threonine
+4.8
+4.4
+8.5
+Tryptophan
+1.5
+1.5
+2.1
+Tyrosine
+5.4
+6.1
+4.2
+Valine
+6.8
+7.0
+7.5
+Table 10.7. Bovine milk proteins
+Fraction
+Genetic
+Portiona
+Isoionic
+Molecular
+Phosphorus
+variants
+point
+weightb
+content
+(kdal)
+(%)
+Caseins
+80
+−
+−
+0.9
+αs1-Casein
+A, B, C, D, E
+34
+4.92–5.35
+23.6f
+1.1
+αs2-Casein
+A, B, C, D
+8
+25.2g
+1.4
+κ-Casein
+A, B, C, E
+9
+5.77–6.07
+19h
+0.2
+β-Casein
+A1, A2, A3, B, C, D, E
+25
+5.20–5.85
+24
+0.6
+γ-Casein
+4
+5.8–6.0
+12–21
+0.1
+γ1-Casein
+A1, A2, A3, B
+20.5
+γ2-Casein
+A1/A2, A3, B
+11.8
+γ3-Casein
+A1/A2/A3, B
+11.6
+Whey proteins
+20
+−
+−
+β-Lactoglobulin
+A, B, C, D, E, F, G
+9
+5.35–5.41
+18.3
+α-Lactalbumin
+A, B, C
+4
+4.2−4.5e
+14.2
+Serum albumin
+A
+1
+5.13
+66.3
+Immunoglobulin
+2
+IgG1
+5.5–6.8
+162
+IgG2
+7.5–8.3
+152
+IgA
+−
+400c
+IgM
+−
+950d
+FSC(s)i
+80
+Proteose-Peptone
+4
+3.3–3.7
+4–41
+a As % of skim milk total protein, b monomers, c dimer, d pentamer, e isoelectric point, f Variant B, g Variant A,
+h Variant A2, i Free secretory component
+The amino acid composition of the total protein,
+casein, and whey protein of bovine milk is pre-
+sented in Table 10.6.
+10.1.2.1.1 Casein Fractions
+The main constituents of this milk protein frac-
+tion have been fairly well investigated.
+Their amino acid sequences are summarized in
+Table 10.8. Data showing the genetic variations
+are provided in Table 10.9. Caseins are not denat-
+urable because of the lacking tertiary structure.
+αs-Caseins. The B variant of αs1-casein consists
+of a peptide chain with 199 amino acid residues
+and has a molecular weight of 23 kdal. The se-
+quence contains 8 phosphoserine residues, 7 of
+which are localized in positions 43–80, and these
+positions have an additional 12 carboxyl groups.
+Thus these positions are extremely polar acidic
+segments along the peptide chain. Proline is uni-
+Table 10.8. Amino acid sequences of bovine milk proteins
+αs1-Casein B-8P
+R
+P
+K
+H
+P
+I
+K
+H
+Q
+G
+L
+P
+Q
+E
+V
+L
+N
+E
+N
+L
+L
+R
+F
+F
+V
+A
+P
+F
+P
+Q
+V
+F
+G
+K
+E
+K
+V
+N
+Q
+L
+S
+K
+D
+I
+G
+Sa
+E
+Sa
+T
+E
+D
+Q
+A
+M
+E
+D
+I
+K
+E
+M
+E
+A
+E
+Sa
+I
+Sa
+Sa
+Sa
+E
+E
+I
+V
+P
+N
+Sa
+V
+Q
+E
+K
+H
+I
+Q
+K
+E
+D
+V
+P
+S
+E
+R
+Y
+L
+G
+Y
+L
+E
+Q
+L
+L
+R
+L
+K
+K
+Y
+K
+V
+P
+Q
+L
+E
+I
+V
+P
+N
+Sa
+A
+E
+E
+R
+L
+H
+S
+M
+K
+E
+G
+I
+H
+A
+Q
+Q
+K
+E
+P
+M
+I
+G
+V
+N
+Q
+E
+L
+A
+Y
+F
+Y
+P
+E
+L
+F
+R
+Q
+F
+Y
+Q
+L
+D
+A
+Y
+P
+S
+G
+A
+W
+Y
+Y
+V
+P
+L
+G
+T
+Q
+Y
+T
+D
+A
+P
+S
+F
+S
+D
+I
+P
+N
+P
+I
+G
+S
+E
+N
+S
+E
+K
+T
+T
+M
+P
+L
+W
+αs2-Casein A-11P
+K
+N
+T
+M
+E
+H
+V
+Sa
+Sa
+Sa
+E
+E
+S
+I
+I
+Sa
+Q
+E
+T
+Y
+K
+Q
+E
+K
+N
+M
+A
+I
+N
+P
+S
+K
+E
+N
+L
+C
+S
+T
+F
+C
+K
+E
+V
+V
+R
+N
+A
+N
+E
+E
+E
+Y
+S
+I
+G
+Sa
+Sa
+Sa
+E
+E
+Sa
+A
+E
+V
+A
+T
+E
+E
+V
+K
+I
+T
+V
+D
+D
+K
+H
+Y
+Q
+K
+A
+L
+N
+E
+I
+N
+E
+F
+Y
+Q
+K
+F
+P
+Q
+Y
+L
+Q
+Y
+L
+Y
+Q
+G
+P
+I
+V
+L
+N
+P
+W
+D
+Q
+V
+K
+R
+N
+A
+V
+P
+I
+T
+P
+T
+L
+N
+R
+E
+Q
+L
+Sa
+T
+Sa
+E
+E
+N
+S
+K
+K
+T
+V
+D
+M
+E
+Sa
+T
+E
+V
+F
+T
+K
+K
+T
+K
+L
+T
+E
+E
+E
+K
+N
+R
+L
+N
+F
+L
+K
+K
+I
+S
+Q
+R
+Y
+Q
+K
+F
+A
+L
+P
+Q
+Y
+L
+K
+T
+V
+Y
+Q
+H
+Q
+K
+A
+M
+K
+P
+W
+I
+Q
+P
+K
+T
+K
+V
+I
+P
+Y
+V
+R
+Y
+L
+β-Casein A2-5P
+R
+E
+L
+E
+E
+L
+N
+V
+P
+G
+E
+I
+V
+E
+Sa
+L
+Sa
+Sa
+Sa
+E
+E
+S
+I
+T
+R
+I
+N
+K
+K
+I
+E
+K
+F
+Q
+Sa
+E
+E
+Q
+Q
+Q
+T
+E
+D
+E
+L
+Q
+D
+K
+I
+H
+P
+F
+A
+Q
+T
+Q
+S
+L
+V
+Y
+P
+F
+P
+G
+P
+I
+P
+N
+S
+L
+P
+Q
+N
+I
+P
+P
+L
+T
+Q
+T
+P
+V
+V
+V
+P
+P
+F
+L
+Q
+P
+E
+V
+M
+G
+V
+S
+K
+V
+K
+E
+A
+M
+A
+P
+K
+H
+K
+E
+M
+P
+F
+P
+K
+Y
+P
+V
+Q
+P
+F
+T
+E
+S
+Q
+S
+L
+T
+L
+T
+D
+V
+E
+N
+L
+H
+L
+P
+P
+L
+L
+L
+Q
+S
+W
+M
+H
+Q
+P
+H
+Q
+P
+L
+P
+P
+T
+V
+M
+F
+P
+P
+Q
+S
+V
+L
+S
+L
+S
+Q
+S
+K
+V
+L
+P
+V
+P
+E
+K
+A
+V
+P
+Y
+P
+Q
+R
+D
+M
+P
+I
+Q
+A
+F
+L
+L
+Y
+Q
+Q
+P
+V
+L
+G
+P
+V
+R
+G
+P
+F
+P
+I
+I
+V
+κ-Casein B-1P
+Zd
+E
+Q
+N
+Q
+E
+Q
+P
+I
+R
+C
+E
+K
+D
+E
+R
+F
+F
+S
+D
+K
+I
+A
+K
+Y
+I
+P
+I
+Q
+Y
+V
+L
+S
+R
+Y
+P
+S
+Y
+G
+L
+N
+Y
+Y
+Q
+Q
+K
+P
+V
+A
+L
+I
+N
+N
+Q
+F
+L
+P
+Y
+P
+Y
+Y
+A
+K
+P
+A
+A
+V
+R
+S
+P
+A
+Q
+I
+L
+Q
+W
+Q
+V
+L
+S
+D
+T
+V
+P
+A
+K
+S
+C
+Q
+A
+Q
+P
+T
+T
+M
+A
+R
+H
+P
+H
+P
+H
+L
+S
+F
+M
+A
+I
+P
+P
+K
+K
+N
+Q
+D
+K
+T
+E
+I
+P
+T
+I
+N
+T
+I
+A
+S
+G
+E
+P
+Tb
+S
+Tb
+P
+Tb
+I
+E
+A
+V
+E
+S
+T
+V
+A
+T
+L
+E
+A
+Sa
+P
+E
+V
+I
+E
+S
+P
+P
+E
+I
+N
+T
+V
+Q
+V
+T
+S
+T
+A
+V
+formly distributed along the chain and apparently
+to a great extent hinders the formation of a regu-
+lar structure. A portion of the chain, up to 30%,
+is assumed to have regular conformations. Amino
+acid residues 100–199 are distinctly apolar and
+are responsible for strong association tendencies,
+10.1 Milk
+503
+504
+10 Milk and Dairy Products
+Table 10.8. continued
+α-Lactalbumin Bc
+E
+Q
+L
+T
+K
+C
+E
+V
+F
+R
+E
+L
+K
+D
+L
+K
+G
+Y
+G
+G
+V
+S
+L
+P
+E
+W
+V
+C
+T
+T
+F
+H
+T
+S
+G
+Y
+D
+T
+E
+A
+I
+V
+E
+N
+N
+Q
+S
+T
+D
+Y
+G
+L
+F
+Q
+I
+N
+N
+K
+I
+W
+C
+K
+N
+D
+Q
+D
+P
+H
+S
+S
+N
+I
+C
+N
+I
+S
+C
+D
+K
+F
+L
+N
+N
+D
+L
+T
+N
+N
+I
+M
+C
+V
+K
+K
+I
+L
+D
+K
+V
+G
+I
+N
+Y
+W
+L
+A
+H
+K
+A
+L
+C
+S
+E
+K
+L
+D
+Q
+W
+L
+C
+E
+K
+L
+β-Lactoglobulin Be
+L
+I
+V
+T
+Q
+T
+M
+K
+G
+L
+D
+I
+Q
+K
+V
+A
+G
+T
+W
+Y
+S
+L
+A
+M
+A
+A
+S
+D
+I
+S
+L
+L
+D
+A
+Q
+S
+A
+P
+L
+R
+V
+Y
+V
+E
+E
+L
+K
+P
+T
+P
+E
+G
+D
+L
+E
+I
+L
+L
+Q
+K
+W
+E
+N
+G
+E
+C
+A
+Q
+K
+K
+I
+I
+A
+E
+K
+T
+K
+I
+P
+A
+V
+F
+K
+I
+D
+A
+L
+N
+E
+N
+K
+V
+L
+V
+L
+D
+T
+D
+Y
+K
+K
+Y
+L
+L
+F
+C
+M
+E
+N
+S
+A
+E
+P
+E
+Q
+S
+L
+A
+C
+Q
+C
+L
+V
+R
+T
+P
+E
+V
+D
+D
+E
+A
+L
+E
+K
+F
+D
+K
+A
+L
+K
+A
+L
+P
+M
+H
+I
+R
+L
+S
+F
+N
+P
+T
+Q
+L
+E
+E
+Q
+C
+H
+I
+a The serine residue is phosphorylated.
+b These threonine residues can be glycosylated.
+c Disulﬁde bonds: 6–120, 28–111, 61–77, 73–91.
+d Pyrrolidone carboxylic acid.
+e Disulﬁde bonds: 66–160 and apparently either 106–119 or 106–121. Accordingly, the free thiol group is either
+Cys-119 or Cys-121.
+which are limited by the repulsing forces of phos-
+phate groups. In the presence of Ca2+ ions, in the
+levels found in milk, αs1-casein forms an insol-
+uble Ca-salt. In the A variant of the molecule,
+amino acid residues 14–26 are missing; in the
+C variant the glutamic acid in position 192 (Glu-
+192) is replaced by Gly-192; and in the D variant
+Pth-53 (phosphothreonine) replaces Ala-53.
+αs2-Casein (Mr 25,000) consists of 207 amino
+acid residues, has a pronounced dipolar structure
+with a concentration of anionic groups in the
+region of the N-terminus and cationic groups
+in the region of the C-terminus. It contains
+11 phosphoserine and 2 cysteine residues and
+is even more easily precipitable with Ca2⊕than
+αs1-casein. Other proteins, previously known as
+αs3-, αs4-, αs5-, and αs6-caseins, appear to be
+members of the αs2 family and to differ in the
+degree of phosphorylation. Dimers linked via
+disulﬁde bridges also appear to be present.
+β-Caseins. The A2 variant is a peptide chain
+consisting of 209 residues and has a molecular
+weight of 24.0 kdal. Five phosphoserine residues
+are localized in positions 1–40; these positions
+contain practically all of the ionizing sites
+of the molecule. Positions 136–209 contain
+mainly residues with apolar side chains. On the
+whole, β-casein is the most hydrophobic casein.
+The molecule has a structure with a “polar
+head” and an “apolar tail”, thus resembling
+a “soaplike” molecule. Indeed, CD measure-
+ments have shown that β-casein contains about
+9% of α-helix structure and about 25% of
+β-structure. An increase in temperature results
+in an increase in the β-structure at the cost
+of
+the
+aperiodic
+part.
+The
+self-association
+of β-casein is an endothermic process. Like
+αs1-casein, β-casein contains no cysteine. The
+protein precipitates in the presence of Ca2+
+ions at the levels found in milk. However, at
+temperatures at or below 1 ◦C the calcium salt is
+quite soluble.
+κ-Caseins. The B variant consists of a peptide
+chain with 169 residues and has a molecular
+weight of 18 kdal. The monomer, which contains
+1 phosphoserine and 2 cysteine residues, is
+accessible
+only
+under
+reducing
+conditions.
+Table 10.9. Amino acid sequencesa of genetic variants of bovine milk proteins
+Protein
+Variant
+Frequencyb
+Positions of the substitutions
+14–26
+53
+59
+192
+αs1-Casein
+A
+s
+are lacking
+(199 AS)
+B
+w
+Ala
+Glu
+Glu
+C
+i
+Gly
+D
+s
+ThrP
+E
+s
+Lys
+Gly
+αs2-Casein
+33
+47
+50–58
+130
+(207 AS)
+A
+Glu
+Ala
+Thr
+B
+C
+Gly
+Thr
+Ile
+D
+lacking
+18
+35
+36
+37
+67
+106
+122
+β-Casein
+A1
+His
+(209 AS)
+A2
+w, i
+SerP
+SerP
+Glu
+Glu
+Pro
+His
+Ser
+A3
+Gln
+B
+s
+His
+Arg
+C
+s
+Ser
+Lys
+His
+D
+s
+Lys
+E
+s
+Lys
+κ-Casein
+97
+136
+148
+155
+(169 AS)
+A
+x
+Thr
+Asp
+Ser
+B
+w, i
+Arg
+Ile
+Ala
+C
+His
+E
+Gly
+10
+α-Lactalbumin
+A
+i
+Gln
+(123 AS)
+B
+w
+Arg
+β-Lactoglobulin
+45
+50
+59
+64
+78
+118
+130
+158
+(162 AS)
+A
+x
+Asp
+Val
+B
+w, i
+Glu
+Pro
+Gln
+Gly
+Ile
+Ala
+Asp
+Gln
+C
+His
+D
+Gln
+E
+Gly
+F
+Ser
+Tyr
+Gly
+G
+Met
+Gly
+a cf. Table 10.8.
+b w: predominant in the western world (Bos taurus), i: predominant in India (Bos indicus, Bos grunniens), s: rare,
+x: not predominant, but not rare.
+Normally, κ-casein occurs as a trimer or as
+a higher oligomer in which the formation of
+disulﬁde bonds is probably involved. The protein
+contains varying amounts of carbohydrates (aver-
+age values: 1% galactose, 1.2% galactosamine,
+2.4% N-acetyl neuramic acid) that are bound
+to the peptide chain through Thr-131, 133, 135
+or (in variant A) 136. κ-Casein is separated
+electrophoretically into various components that
+have the same composition of amino acids, but
+differ in their carbohydrate moiety, e. g., per pro-
+tein molecule they contain 0–3 moles N-acetyl
+neuramic acid, 0–4 moles galatose and 0–3 moles
+galactosamine. Three different glycosyl residues
+could be isolated, one of which has the structure
+shown in Formula 10.3.
+10.1 Milk
+505
+506
+10 Milk and Dairy Products
+Fig. 10.1. Calcium binding by I: αs1-casein (0.38),
+II: β-casein (0.21) and III: κ-casein (0.05). The bound
+phosphate residues in mmol/g of casein are given in
+brackets (according to Walstra and Jenness, 1984)
+In the other two oligosaccharide units, one of the
+two N-acetylneuraminic acid residues is lacking
+in each case.
+κ-Casein is the only main constituent of ca-
+sein which remains soluble in the presence of
+Ca2+ ions in the concentrations found in milk
+(Fig. 10.1). Aggregation of αs1- and β-caseins
+with κ-casein prevents their coagulation in
+the presence of Ca2+ ions (Fig. 10.2). This
+property of κ-casein is of utmost importance
+for formation and maintenance of stable casein
+complexes and casein micelles, as occur in
+milk. Chymosin (rennet, rennin cf. 1.4.5.2)
+selectively cleaves the peptide chain of κ-casein
+at −Phe105 −Met106−into two fragments: para-
+κ-casein and a glycopeptide (Pyg = pyroglutamic
+acid, i. e. pyrrolidone carboxylic acid):
+1
+105
+106
+169
+Pyg ······ Phe −Met ······ Val
+κ-Casein
+1
+105
+106
+169
+Pyg ······ Phe + Met ······ Val
+Lab
+−→
+para-κ-Casein
+Glycopeptide
+Fig. 10.2. Inﬂuence of κ-casein on the solubility of
+κs1-casein. (−2.5 mg/ml) and β-casein (−1.5 mg/ml;
+−6 mg/ml) at pH 7.0, 30 ◦C, 100 mmol/l CaCl2 (ac-
+cording to Walstra and Jenness, 1984)
+The released glycopeptide is soluble, while
+para-κ-casein precipitates in the presence of
+Ca2+ ions. In this way κ-casein loses its pro-
+tective effect; the casein complexes and casein
+micelles coagulate (curdle formation) from the
+milk. The speciﬁcity of rennin is high, as is
+shown in Table 10.10. If Met106 in κ-casein is
+replaced with Phe106 by genetic engineering
+techniques, the rate of catalysis is increased
+by 80%. The sugar moiety of κ-casein is not
+essential for rennin action, nor for the stabilizing
+property of its protein portion. However, the
+sugar moiety delays protein cleavage by rennin.
+Also, it appears that the stability of αs- and
+κ-casein mixtures in the presence of Ca2+ ions
+is inﬂuenced by the carbohydrate content of
+κ-casein.
+(10.4)
+(10.3)
+Table 10.10. Chymosin speciﬁcity: relative rate of hydrolysis of peptides from the κ-casein amino acid sequence
+Substrate
+Va
+rel
+105
+106
+Phe-Met
+0.00
+104
+108
+Ser-Phe-Met-Ala-Ile
+0.04
+109
+Ser-Phe-Met-Ala-Ile-Pro
+0.11
+103
+Leu-Ser-Phe-Met-Ala-Ile
+21.6
+102
+His-Leu-Ser-Phe-Met-Ala-Ile
+31
+110
+Leu-Ser-Phe-Met-Ala-Ile-Pro-Pro
+100
+101
+Pro-His-Leu-Ser-Phe-Met-Ala-Ile
+100
+98
+112
+His-Pro-His-Pro-His-Leu-Ser-Phe-Met-Ala-Ile-Pro-Pro-Lys-Lys
+2500
+a Relative rate: kcat/Km.
+In the C variant of κ-casein, Arg97 is replaced
+with His97 (Table 10.9), which has a weaker
+positive charge. As a result, chymosin is not as
+strongly bound as in the case of the B variant;
+the rate of catalysis decreases. Therefore, C vari-
+ant milk is less suitable for the production of
+sweet-milk cheese than B variant milk.
+γ-Caseins. These proteins are degradation prod-
+ucts of the β-caseins, formed by milk proteases,
+e. g., γ1-casein is obtained by cleavage of the resi-
+dues 1–28. The peptide released is identical to
+the proteose-peptone PP8F which has been found
+in milk. Correspondingly, γ2- and γ3-caseins are
+formed by hydrolysis of the amino acid residues
+1–105 and 1–107 respectively. According to more
+recent nomenclature recommendations, β-casein
+fragments should be described by the position
+numbers. Thus, γ1-casein from any β-casein vari-
+ant X is called, e. g., β-casein X (f29–209) and the
+corresponding proteose peptone PF8F β-casein X
+(f1–28).
+λ-Caseins. The λ-casein fraction consists mainly
+of fragments of the αs1-caseins. In vitro the
+α-caseins are formed by incubation of the
+αs1-caseins with bovine plasmin.
+The molar ratio of the main components αs1/β+
+γ/κ/αs2 is on an average 8/8/3/2. All casein
+forms contain phosphoric acid, which always oc-
+curs in a tripeptide sequence pattern (Pse = phos-
+phoserine):
+Pse-X-Glu
+or
+Pse-X-Pse
+(10.5)
+in which X is any amino acid, including phospho-
+serine and glutamic acid. Examples are:
+αs1-Casein :
+Pse-Glu-Pse
+Pse-Ile-Pse-Pse-Pse-Glu
+Pse-Val-Glu
+Pse-Ala-Glu
+β-Casein :
+Pse-Leu-Pse-Pse-Pse-Glu
+Pse-Glu-Glu
+κ-Casein :
+Pse-Pro-Glu
+(10.6)
+Most probably this regular pattern originates from
+the action of a speciﬁc protein kinase. The various
+distribution of polar and apolar groups of the in-
+dividual proteins outlined above are summarized
+in Table 10.11. The hydrophobicity values listed
+are average hydrophobicity values H of the amino
+acid side chains present in the sequence of the
+given segments, and are calculated as follows:
+A measure of the hydrophobicity of a compound
+is the free energy, Ft, needed to transfer the com-
+pound from water into an organic solvent, and is
+given as the ratio of the compound’s solubility in
+water (Nw, as mole fraction) and in the organic
+solvent (Norg, as mole fraction), involving the ac-
+10.1 Milk
+507
+508
+10 Milk and Dairy Products
+Table 10.11. Distribution of amino acid residues with
+ionizing side chains (net charge) and with nonpolar side
+chains (hydrophobicity) in αs1-casein and β-casein
+Residue
+αs1-Casein
+Residue
+β-Casein
+1
+2
+1
+2
+1–40
++3
+1340
+1–43
+−16
+783
+41–80
+−22.5
+641
+44–92
+−3.5
+1429
+81–120
+0
+1310
+93–135
++2
+1173
+121–160
+−1
+1264
+136–177
++3
+1467
+161–199
+−2.5
+1164
+178–209
++2
+1738
+1 Net charge.
+2 Hydrophobicity H (Cal/mole; cf. text).
+tivity coefﬁcients (γw, γorg):
+ΔFt = RT ln Nw ·γw
+Norg ·γorg
+The corresponding free energy of transfer of the
+side chain of an amino acid HΦi is obtained from
+the following relationship:
+HΦi = ΔFt(amino acid i)−ΔFi(glycine)
+The average hydrophobicity of a sequence seg-
+ment of a polypeptide chain with n amino acid
+residues is then:
+H = ΣHΦi
+n
+(10.8)
+The higher the HΦi, i. e. H, the higher is the hy-
+drophobicity of individual side chains, i. e. the se-
+quence segment. Data provided in Table 10.11 are
+related to the ethanol/water system.
+10.1.2.1.2 Micelle Formation
+Only up to 10% of the total casein fraction is
+present as monomers. They are usually desig-
+nated as serum caseins and the concentration ratio
+cβ > cκ > cαsl is quite valid. However, the main
+portion is aggregated to casein complexes and ca-
+sein micelles. This aggregation is regulated by
+a set of parameters, as presented in Fig. 10.3.
+Dialysis of casein complexes against a chelating
+agent might shift the equilibrium completely to
+Fig. 10.3. Casein complex and casein micelle formation
+monomers, while against high Ca2+ ion concen-
+trations the shift would be to large micelles.
+From Fig. 10.4 it follows that the diameter of
+the micelles in skim milk varies from 50–300 nm,
+with a particle distribution peak at 150 nm. Us-
+ing an average diameter of 140 nm, the micelle
+volume is 1.4 × 106 nm3 and the particle weight
+is 107–109dal. This corresponds to 25,000 mono-
+mers per micelle. Casein micelles are substan-
+tially smaller than fat globules, which have diam-
+eters between 0.1–10 µm. Scanning electron mi-
+crographs of micelles are shown in Fig. 10.5 and
+compositional data are provided in Table 10.12.
+The ratio of monomers in micelles varies to
+a great extent (Table 10.13), depending on dairy
+cattle breed, season and fodder, and is inﬂu-
+enced also by micellular size (Table 10.14).
+The micelles are not tightly packed and so are
+of variable density. They are strongly solvated
+(10.7)
+Fig. 10.4. Particle size distribution of casein micelles in
+skim milk (ﬁxation with glutaraldehyde)
+Fig. 10.5. Electron micrograph of the casein micelles in
+skim milk (according to Webb, 1974). The micelles are
+ﬁxed with glutaraldehyde and then stained with phos-
+phomolybdic acid
+Table 10.12. Composition of casein micelles (%)
+Casein
+93.2
+Phosphate
+Ca
+2.9
+(organic)
+2.3
+Mg
+0.1
+Phosphate
+Na
+0.1
+(inorganic)
+2.9
+K
+0.3
+Citrate
+0.4
+Table 10.13. Typical distribution of components in
+casein micelles
+Component
+Ratio numbers
+αs1
+3
+6
+9
+12
+β
+1
+1
+4
+4
+γ
+1
+1
+1
+κ
+1
+3
+3
+3
+(1.9 g water/g protein) and hence are porous.
+The monomers are kept together with:
+•
+Hydrophobic interactions that are minimal at
+a temperature less than 5 ◦C.
+•
+Electrostatic interactions, mostly as calcium or
+calcium phosphate bridges between phospho-
+serine and glutamic acid residues (Fig. 10.6).
+•
+Hydrogen bonds.
+On a molecular level different micelle models
+have been proposed which to a certain extent
+explain the experimental ﬁndings. The most
+probable model is shown in Fig. 10.7. This model
+comprises subunits (submicelles, Mr ∼760,000)
+Table 10.14. Composition and size of casein micelles
+isolated by centrifugation
+Centrifugation
+Composition of the
+time (min)a
+sediment(%)
+αs1
+β
+κ
+Others
+0b
+50
+32
+15
+3
+0−7.5
+47
+34
+16
+3
+7.5−15
+46
+32
+18
+4
+15–30
+45
+31
+20
+4
+39–60
+42
+29
+26
+3
+Serum casein
+39
+23
+33
+5
+a Centrifugation speed 105 ×g.
+b Isoelectric casein.
+which consist of ca. 30 different casein monomers
+and aggregate to large micelles via calcium phos-
+phate bridges. Two types of subunits apparently
+exist: one type contains κ-casein and the other
+does not. The κ-casein molecules are arranged
+on the surface of the corresponding submicelles.
+At various positions, their hydrophilic C-termini
+protrude like hairs from the surface, preventing
+aggregation. Indeed, aggregation of the sub-
+micelles proceeds until the entire surface of
+the forming micelle is covered with κ-casein,
+i. e., covered with “hair”, and, therefore, exhibits
+steric repulsion. The effective density of the hair
+layer is at least 5 nm. A small part of the κ-casein
+is also found inside the micelle.
+10.1.2.1.3 Gel Formation
+The micelle system, can be destabilized by
+the action of rennin or souring. Rennin attacks
+κ-casein, eliminating not only the C-terminus in
+the form of the soluble glycopeotide 106–169,
+but also the cause of repulsion. The remaining
+paracasein micelles ﬁrst form small aggregates
+with an irregular and often long form, which
+then assemble with gel formation to give a three
+dimensional network with a pore diameter of
+a few µm. The fat globules present are included
+in this network with pore enlargement. It is
+assumed that dynamic equilibria exist between
+casein monomers and submicelles, dissolved and
+bound calcium phosphate, and submicelles and
+micelles.
+10.1 Milk
+509
+510
+10 Milk and Dairy Products
+Fig. 10.6. Peptide chain bridg-
+ing with calcium ions
+Fig. 10.7. Schematic model of a casein micelle;
+(a) a subunit consisting of αs1-, β-, γ-, κ-caseins, (b)
+Micelle made of subunits bound by calcium phosphate
+bridges (according to Webb, 1974)
+The rate of gel formation increases with in-
+creasing temperature (Fig. 10.8). It is slow at
+T < 25 ◦C and proceeds almost under diffusion
+control at T ∼60 ◦C. It follows that hydrophobic
+interactions, especially due to the very hydropho-
+bic para-κ-casein remaining on the surface after
+the action of rennin, are the driving force for
+Fig. 10.8. Temperature dependency of the aggregation
+rate of para-casein micelles (rate constant k in fractions
+of the diffusion-controlled rate kD; according to Dal-
+gleish, 1983)
+gel formation. In addition, other temperature-
+dependent reactions play a role, like the binding
+of calcium ions and of β-casein to the micelles,
+and the change in solubility of colloidal calcium
+phosphate.
+Acid coagulation of casein is also deﬁnitely
+caused by hydrophobic interactions, as shown
+by the dependency of the coagulation rate on
+the temperature and pH value (Fig. 10.9). On
+acidiﬁcation, the micelle structure changes due
+to the migration of calcium phosphate and
+monomeric casein. Since the size of the micelle
+remains practically constant, this migration of
+components must be associated with swelling.
+During coagulation, dissolved casein reassociates
+with the micelles, forming a gel network.
+The gel structure can be controlled via changes
+in the hydrophobicity of the micelle surface.
+A decrease in hydrophobicity is possible, e. g., by
+heating milk (90 ◦C/10 min). Covalent bonding
+of denatured β-lactoglobulin to κ-casein (cf.
+10.1.3.5) occurs, burying hydrophobic groups.
+Fig. 10.9. Rate of coagulation of casein micelles as
+a function of temperature and pH value (—— 25 ◦C,
+−··−15 ◦C, −·−10 ◦C, – – – 5 ◦C, according to
+Bringe, Kinsella, 1986)
+Due to weaker interactions, stable, rigid gels with
+a chain-like structure are formed on acidiﬁcation.
+These gels exhibit no syneresis and are desirable,
+e. g., in yoghurt (10.2.1.2). Figure 10.10 shows
+that the ﬁrmness of stiff yoghurt is highest when
+the denaturation of β-lactoglobulin is 90–99%.
+If this rate of denaturation is achieved at lower
+temperatures (e. g., 85 ◦C), gels are formed that
+are more rigid and coarser than those formed by
+heating to higher temperatures (e. g., 130 ◦C),
+which results in a soft, smooth gelatinous mass.
+The gel stability of whole-milk yoghurt is lower
+than that of skim-milk yoghurt because the
+protein network is interrupted by included fat
+globules.
+Fig. 10.10. Firmness of yoghurt as a function of the
+rate of denaturation of β-lactoglobulin B (the ﬁnal value
+of the penetration resistance of a conical test piece
+in stiff yoghurt is given; heating temperature 85 ◦C:
+——, 130 ◦C: – – –, WM: whole milk with 3.5% fat,
+SM: skim milk; according to Kessler, 1988)
+Fig.
+10.11.
+Flow
+curves
+of
+stiff
+skim-milk
+yoghurt
+subjected
+to
+deﬁned
+prestirring
+as
+a
+function
+of
+the
+rate
+of
+denaturation
+of
+β-
+lactoglobulin
+B
+(temperature/time/denaturation
+rate 90 ◦C/2.2 s/10%: – – –, 90 ◦C/21 s/60%: ——,
+90 ◦C/360 s/99%: – . –; according to Kessler, 1988)
+Flow curves of skim-milk yoghurt as a function of
+the rate of denaturation of β-lactoglobulin are pre-
+sented in Fig. 10.11. The yield point is a measure
+of the elastic properties of the gel and the area
+enclosed by the hysteresis loop is a measure of
+the total energy required to destroy the gel. Both
+parameters increase with increasing rate of denat-
+uration, which is a sign of increasing gel stability.
+In contrast to yoghurt production, syneresis of
+the gel is desirable in the production of cottage
+cheese, so that the typical texture is attained. For
+this reason, the milk is only slightly heat treated
+and the surface hydrophobicity is increased by the
+addition of chymosin before acidiﬁcation.
+10.1.2.1.4 Whey Proteins
+β-Lactoglobulin occurs in genetic variants A, B
+and C of the Jersey dairy cattle breed, and variant
+D of the Montbeliarde dairy cow. Two other ADr
+and BDr variants of Australian drought master
+cows are identical to variants A and B apart from
+the carbohydrate content.
+Table 10.9 shows the corresponding changes in
+the amino acid composition of β-lactoglobulin.
+The monomeric β-lactoglobulin has a molecu-
+lar weight of 18 kdal and consists of 162 amino
+acids, whose sequence is shown in Table 10.8. It
+exhibits a reversible, pH-dependent oligomeriza-
+tion, as represented by the equation:
+A ⇄A2 ⇄(A2)4 ⇄A2 ⇄A
+pH < 3.5
+3.7 < pH < 5.1
+pH > 7.5
+(10.9)
+10.1 Milk
+511
+512
+10 Milk and Dairy Products
+Hence, the monomer is stable only at a pH
+less than 3.5 or above 7.5. The octamer oc-
+curs with variant A, but not with variants B
+and C. Irreversible denaturation occurs at a pH
+above 8.6 as well as by heating or at higher levels
+of Ca2+ ions. β-lactoglobulin has 5 cysteine
+residues, one (Cys121, Table 10.8) of which
+being free. In the native protein, however, this
+cysteine is buried within the structure. This SH
+group is exposed on partial denaturation and
+can participate either in protein dimerization via
+disulﬁde bridge formation or in reactions with
+other milk proteins, especially with κ-casein and
+α-lactalbumin, which proceed during the heating
+of milk.
+α-Lactalbumin (Mr 14,200). This protein exists
+in two genetic forms, A and B (Gln →Arg).
+It has 8 cysteine residues. Its amino acid se-
+quence (Table 10.8), which is similar to that of
+lysozyme, has been elucidated. Disulﬁde bonds
+and a Ca2⊕ion participate in the stabilization
+of the tertiary structure. α-Lactalbumin has
+a biological function since it is the B subunit
+of the enzyme lactose synthetase. The enzyme
+subunit A is a nonspeciﬁc UDP-galactosyl trans-
+ferase; the subunit B makes sure that the transfer
+of the galactose residue can occur at the low
+glucose concentration present in mammals. The
+afﬁnity of the transferase alone for glucose is too
+low (Km = 2 mol/l). It is increased 1000 fold by
+cooperation with α-lactalbumin.
+10.1.2.2 Carbohydrates
+The main sugar in milk is lactose, an O-β-
+D-galactopyranosyl-(1 →4)-D-glucopyranose,
+which is 4–6% of milk.
+The most stable form is α-lactose monohydrate,
+C12H22O11 · H2O. Lactose crystallizes in this
+form from a supersaturated aqueous solution at
+T < 93.5 ◦C. The crystals may have a prism-
+or pyramid-like form, depending on conditions.
+Vacuum drying at T > 100 ◦C yields a hy-
+groscopic
+α-anhydride.
+Crystallization
+from
+aqueous solutions above 93.5 ◦C provides water-
+free β-lactose (β-anhydride, cf. Formula 10.10).
+Rapid drying of a lactose solution, as in milk
+powder production, gives a hygroscopic and
+amorphous
+equilibrium
+mixture
+of
+α-
+and
+β-lactose.
+Some physical data of lactose are summarized in
+Table 10.15. The ratio of anomers is temperature
+dependent. As temperature increases, the β-form
+decreases. The mutarotation rate is temperature
+(Q10 = 2.8) and pH dependent (Fig. 10.12). The
+rise in mutarotation rate at pH < 2 and pH > 7
+originates from the rate-determining step of ring
+opening, which is catalyzed by both H+ and OH−
+ions:
+Fig. 10.12. Mutarotation rate of lactose as affected by
+pH
+(10.10)
+(10.11)
+Table 10.15. Some physical characteristics of lactose
+α-Lactose
+β-Lactose
+Equilibrium
+mixture
+Melting point
+(◦C)
+223a
+252.2a
+Spec. rotation
+[α]20
+D
+89.4
+35.0
+Equilibrium in aqueous solutionb
+0 ◦C
+1.00
+1.80
+20 ◦C
+1.00
+1.68
+50 ◦C
+1.00
+1.63
+Solubility in waterc
+0 ◦C
+5.0
+45.1
+11.9
+25 ◦C
+8.6
+21.6
+39 ◦C
+12.6
+31.5
+100 ◦C
+70
+94.7
+157.6
+a Anhydrous. b Relative concentration.
+c g Lactose/100 g water.
+The great solubility difference between the two
+anomers is noteworthy. The sweetness of lactose
+is signiﬁcantly lower than that of fructose, glu-
+cose or sucrose (Table 10.16). For people who
+suffer under lactose intolerance, dietetic milk
+products are produced by treatment with β-1,4-
+galactosidase (cf. 2.7.2.2.7). Glucose and some
+other amino sugars and oligosaccharides are
+present in small amounts in milk.
+Lactulose is found in heated milk products. It
+is a little sweeter and clearly more soluble than
+lactose. For example, condensed milk contains
+up to 1% of lactulose, corresponding to an iso-
+merization of ca. 10% of the lactose present. The
+formation proceeds via the Lobry de Bruyn–van
+Ekenstein rearrangement (cf. 4.2.4.3.2) or via
+Schiff base. Traces of epilactose (4-O-β-D-glacto-
+Table 10.16. Relative sweetness of saccharose, glucose,
+fructose and lactosea
+Saccharose
+Glucose
+Fructose
+Lactose
+0.5
+0.9
+0.4
+1.9
+5.0
+8.3
+4.2
+15.7
+10.0
+12.7
+8.7
+20.7
+20.0
+21.8
+16.7
+33.3
+a Results are expressed as concentration % for isosweet
+aqueous sugar solutions.
+pyranosyl-D-mannose) are also formed on heat-
+ing milk.
+10.1.2.3 Lipids
+The composition of milk fat is presented in Ta-
+ble 10.17. Milk fat contains 95–96% triglycerols.
+Its fatty acid composition is given in Table 10.18.
+The relatively high content of low molecular
+weight fatty acids, primarily of butyric acid, is
+characteristic of milk. Although linoleic acid
+dominates in the lipids occurring in feed, the
+content of this fatty acid is very low in milk
+fat (Table 10.17). The reason was found to
+be that microorganisms living in the rumen
+hydrogenate the linoleic acid to oleic acid and
+stearic acid with the formation of conjugated
+linoleic acid (CLA, cf. 3.2.1.2) and vaccenic acid
+as intermediates, as shown in Fig. 10.13. It is
+possible to increase the concentration of linoleic
+Table 10.17. Milk lipids
+Lipid fraction
+Percent of the total lipid
+Triacylglycerols
+95–96
+Diacylglycerols
+1.3–1.6
+Monoacylglycerols
+0.02–0.04
+Keto acid glycerides
+0.9–1.3
+Hydroxy acid glycerides
+0.6–0.8
+Free fatty acids
+0.1–0.4
+Phospholipids
+0.8–1.0
+Sphingolipids
+0.06
+Sterols
+0.2–0.4
+Fig. 10.13. Biohydrogenation of linoleic acid in the ru-
+men of ruminants
+10.1 Milk
+513
+514
+10 Milk and Dairy Products
+Table 10.18. Fatty acid composition of milk fata
+Fatty acid
+Weight-%
+Saturated, straight chain
+Butyric acid
+2.79
+Caproic acid
+2.34
+Caprylic acid
+1.06
+Capric acid
+3.04
+Lauric acid
+2.87
+Myristic acid
+8.94
+Pentadecanoic acid
+0.79
+Palmitic acid
+23.8
+Heptadecanoic acid
+0.70
+Stearic acid
+13.2
+Nonadecanoic acid
+0.27
+Arachidic acid
+0.28
+Behenic acid
+0.11
+Saturated, branched chain
+12-Methyltetradecanoic acid
+0.23
+13-Methyltetradecanoic acid
+0.14
+14-Methylpentadecanoic acid
+0.20
+14-Methylhexadecanoic acid
+0.23
+15-Methylhexadecanoic acid
+0.36
+3,7,11,15-Tetramethylhexadecanoic
+0.12–0.18
+acid
+Unsaturated
+9-Decenoic acid
+0.27
+9-cis-Tetradecenoic acid
+0.72
+9-cis-Hexadecenoic acid
+1.46
+9-cis-Heptadecenoic acid
+0.19
+8-cis-Octadecenoic acid
+0.45
+Oleic acid
+25.5
+11-cis-Octadecenoic acid
+0.67
+9-trans-Octadecenoic acid
+0.31
+10-trans-Octadecenoic acid
+0.32
+11-trans-Oxtadecenoic acid
+1.08
+12-trans-Octadecenoic acid
+0.12
+13-trans-Octadecenoic acid
+0.32
+14-trans-Octadecenoic acid
+0.27
+15-trans-Octadecenoic acid
+0.21
+16-trans-Octadecenoic acid
+0.23
+Linoleic acid
+2.11
+Linolenic acid
+0.38
+a Only acids with a content higher than 0.1% are listed.
+acid in milk fat, e. g., by adding plant fats of the
+appropriate composition in encapsulated form
+to the feed. The disadvantage of such a nutri-
+tionally/physiologically interesting approach is
+the changed physico-chemical properties of the
+dairy product, e. g., an increased susceptibility
+to oxidation and the formation of unsaturated
+lactones (γ-dodec-cis-6-enolactone from linoleic
+acid) which inﬂuences the ﬂavor of milk and
+meat. In addition to the main straight-chain
+fatty acids, small amounts of odd-C-number,
+branched-chain and oxo-fatty acids (cf. 3.2.1.3)
+are present.
+Phospholipids are 0.8–1.0% of milk fat and
+sterols, mostly cholesterol, are 0.2–0.4%. Butter-
+fat melting properties, as affected by season and
+fodder, are listed in Table 10.19. Milk fat is very
+ﬁnely distributed in plasma. The diameter of fat
+globules is 0.1–10 µm, but for the main part in the
+range of 1–5 µm. During homogenization, milk
+at 50–75 ◦C is forced through small passages
+under pressure of up to 35 MPa, the diameter
+of the globules lowers to <1 µm, depending on
+the pressure. The fat droplets are surrounded
+by a membrane that consists of phospholipids
+and a double layer of proteins and accounts for
+about 2% of the total mass of the droplet. The
+layer thickness is on average 8–9 nm, but is not
+uniform. Membrane compositional data are given
+in Table 10.20.
+About 40 proteins with Mr 15–240 kdal (milk
+fat globule membrane proteins, MFGM proteins)
+are involved in the make-up of the membrane.
+Although their nutritional value with regard to
+the caseins and whey proteins is low, they receive
+Table 10.19. Melting characteristics of butterfat
+Temperature
+Solid
+Temperature
+Solid
+content
+content
+(◦C)
+(%)
+(◦C)
+(%)
+5
+43–47
+30
+6–8
+10
+40–43
+35
+1–2
+20
+21–22
+40
+0
+Table
+10.20.
+Membrane
+composition
+of
+milkfat
+globules
+Constituent
+Proportion (%)
+Protein
+41
+Phospho- and glycolipids
+30
+Cholesterol
+2
+Neutral glycerides
+14
+Water
+13
+attention because they can be detrimental to the
+health of sensitized persons. Casein proteins en-
+ter and participate in membrane formation when
+the fat globule surface area is expanded 4- to
+6-fold during homogenization of milk. Six of the
+eight dominant proteins in the MFGM are gly-
+coproteins, e. g., xanthine oxidoreductase. Other
+enzymes which are present in the membrane
+are acetylcholine esterase as well as alkaline
+and acidic phosphatase (cf. Table 10.24). A very
+active lipoprotein lipase, a glycoprotein (8.3%
+carbohydrate, molecular weight 48.3 kdal), oc-
+curs in the casein micelles. However, if the
+milking and storage procedures are appropriate,
+the raw milk can be kept for several days without
+the development of a rancid off-ﬂavor. It is likely
+that the membranes of the fat globules prevent
+lipolysis. Disruption of the organized structure of
+the membrane, for instance by homogenization,
+allows the lipase to bind to the fat globules and
+to hydrolyze the triacylglycerols at a high rate
+(1 µmole fatty acid per min per ml milk, pH 7,
+37 ◦C). The milk becomes unpalatable within
+a few minutes. Therefore the lipoprotein lipase
+has to be inactivated by pasteurization prior to
+milk homogenization.
+The small amounts of gangliosides that occur
+in milk (5.6 µmol/l, calculated as ganglioside-
+bound sialic acid) are of interest for the analytical
+differentiation of skim-milk and butter-milk pow-
+der. As structural elements of the membrane of
+the fat globules, the cream gets enriched with gan-
+gliosides during skimming and only about 8% re-
+main in the skimmed milk. During butter-making,
+the membrane of the fat globules is mechanically
+destroyed and the highly polar gangliosides pass
+almost completely into the buttermilk. Therefore,
+unlike skim-milk powder, butter-milk powder is
+rich in gangliosides (ca. 480 µmol/kg, calculated
+as sialic acid).
+10.1.2.4 Organic Acids
+Citric acid (1.8 g/l) is the predominant organic
+acid in milk. During storage it disappears rapidly
+as a result of the action of bacteria. Other acids
+(lactic, acetic) are degradation products of lac-
+tose. The occurrence of orotic acid (73 mg/l), an
+intermediary product in biosynthesis of pyrimi-
+dine nucleotides, is speciﬁc for milk:
+Table 10.21. Indicators for the proportion of milk in
+foods
+Compound
+Whole milk
+Skim milk
+powder
+powder
+Orotic acid
+photometric
+50.6
+66.4
+polarographic
+46.6
+58.1
+Total creatinine
+66.3
+84.4
+Uric acid
+12.4
+15.3
+Expressed as mg/100 g solids.
+Orotic acid as well as total creatinine and uric
+acid are suitable indicators for the determination
+of the proportion of milk in foods. The aver-
+age values for whole-milk and skim-milk powder
+given in Table 10.21 can serve as reference val-
+ues.
+10.1.2.5 Minerals
+Minerals, including trace elements, in milk are
+compiled in Table 10.22.
+10.1.2.6 Vitamins
+Milk contains all the vitamins in variable amounts
+(Table 10.23). During processing, the fat-soluble
+vitamins are retained by the cream, while the
+water-soluble vitamins remain in skim milk or
+whey.
+10.1 Milk
+515
+(10.12)
+516
+10 Milk and Dairy Products
+Table 10.22. Mineral composition of milk
+Constituent
+mg/l
+Constituent
+µg/l
+Potassium
+1500
+Zinc
+4000
+Calcium
+1200
+Aluminum
+500
+Sodium
+500
+Iron
+400
+Magnesium
+120
+Copper
+120
+Phosphate
+3000
+Molybdenum
+60
+Chloride
+1000
+Manganese
+30
+Sulfate
+100
+Nickel
+25
+Silicon
+1500
+Bromine
+1000
+Boron
+200
+Fluorine
+150
+Iodine
+60
+Table 10.23. Vitamin content of milk
+Vitamin
+mg/l
+Vitamin
+mg/l
+A (Retinol)
+0.4
+Nicotinamide
+1
+D (Calciferol)
+0.001
+Pantothenic acid
+3.5
+E (Tocopherol)
+1.0
+C (Ascorbic acid)
+20
+B1 (Thiamine)
+0.4
+Biotin
+0.03
+B2 (Riboﬂavin)
+1.7
+Folic acid
+0.05
+B6 (Pyridoxine)
+0.6
+B12 (Cyano-
+cobalamine)
+0.005
+10.1.2.7 Enzymes
+Milk contains a great number of enzymes which
+are not only of analytical importance for the de-
+tecton of heat-treated milk, but can also inﬂuence
+the processing properties. The rate of heat inacti-
+vation of the enzymes indicates the type and ex-
+tent of heating (cf. 2.5.4).
+Hydrolases identiﬁed include: amylases, lipases,
+esterases, proteinases and phosphatases. Protein-
+ase inhibitors have also been found. Important
+oxidoreductases in milk are aldehyde dehydro-
+genase (xanthine oxidase), lactoperoxidase and
+catalase. A general idea of the occurrence and lo-
+calization of enzymes in boving milk is given in
+Table 10.24
+10.1.2.7.1 Plasmin
+The serine endopeptidase plasmin is of special in-
+terest in milk technology.
+Table 10.24. Enzymes in bovine milk
+EC
+Name
+Localizationa
+Number
+1.1.1.27
+L-Lactate dehydrogenase
+P
+1.1.1.37
+Malate dehydrogenase
+1.1.3.22
+Xanthine oxidase
+F
+1.4.3.6
+Amine oxidase
+(copper-containing)
+1.6.99.3
+NADH dehydrogenase
+F
+1.8
+Sulfhydryl oxidaseb
+S
+1.8.1.4
+Dihydrolipoamide
+F
+dehydrogenase
+1.11.1.6
+Catalase
+L
+1.11.1.7
+Lactoperoxidase
+S
+1.15.1.1
+Superoxide dismutase
+2.3.2.2
+γ-Glutamyltransferase
+F
+2.4.1.22
+Lactose synthase
+S
+2.4.99.1
+β-Galactoside-α-2,6-
+sialytransfersase
+2.6.1.1
+Aspartate aminotransferase
+P
+2.6.1.2
+Alanine aminotransferase
+2.7.1.26
+Riboﬂavin kinase
+2.7.1.30
+Glycerol kinase
+2.7.7.2
+FMN adenyl transferase
+2.8.1.1
+Thiosulfate sulfurtransferase
+3.1.1.1
+Carboxylesterase
+S
+3.1.1.2
+Arylesterase
+3.1.1.7
+Acetylcholine esterase
+F
+3.1.1.8
+Choline esterase
+S
+3.1.1.34
+Lipoproteinlipase
+C
+3.1.3.1
+Alkaline phosphatase
+F
+3.1.3.2
+Acid phosphatase
+F
+3.1.3.5
+5′-Nucleotidase
+F
+3.1.3.9
+Glucose-6-phosphatase
+F
+3.1.3.16
+Phosphoprotein phosphatase
+P
+3.1.4.1
+Phosphodiesterase I
+F
+3.1.27.5
+Pancreatic ribonuclease
+S
+3.2.1.1
+α-Amylase
+S
+3.2.1.2
+β-Amylase
+3.2.1.17
+Lysozyme
+S
+3.2.1.24
+α-Mannosidase
+3.2.1.31
+β-Glucuronidase
+3.2.1.52
+β-N-Acetylglucosaminidase
+3.4
+Acid peptidases
+3.4.21.7
+Plasmin
+C
+3.6.1.3
+Adenosinetriphosphatase
+F
+3.6.1.9
+Nucleotide pyrophosphatase
+4.1.2.13
+Fructosebiphosphate
+aldolase
+5.3.1.9
+Glucose-6-phosphate
+isomerase
+a C: casein micelle, F: fat-globule membrane, L: leuco-
+cytes, P: plasma, S: serum.
+b Not thiol oxidase EC 1.8.3.2.
+Plasmin, its precursor plasminogen and the plas-
+minogen activator (PA) are present in milk asso-
+ciated to the casein micelles and the membranes
+of the fat globules. A shift of the pH value to
+the acidic range (pH 4.7) promotes the release of
+plasmin from casein. The concentration of plas-
+min is 0.3–2.5 µg/ml milk. It increases with the
+age of the cow and during the lactation period.
+Plasmin is in the pH range 7.5–8.0 most active at
+37 ◦C. It preferentially hydrolyzes β-casein and
+at a lower rate also α-casein. κ-Casein is resis-
+tant just like the whey proteins α-lactalbumin and
+β-lactoglobulin. Like trypsin, it attacks the car-
+boxyl side of L-lysine as well as L-arginine on
+hydrolysis. The activity of plasmin is controlled
+by the PA inhibitor and the plasmin inhibitor.
+The plasmin activity is reduced by only 10–17%
+under the conditions of pasteurization, e. g., 72 ◦C
+for 15 s. Storage of pasteurized milk indirectly
+promotes plasmin activity because the inhibitors
+of PA are inactivated. Complete thermal inactiva-
+tion of plasmin is achieved at 120 ◦C in 15 min
+and at 142 ◦C in 18 s.
+Plasmin inﬂuences the ripening process, e.g., in
+Camembert. It is accelerated and aroma forma-
+tion is improved. In the recovery of caseinates, on
+the other hand, the separation of plasmin is abso-
+lutely necessary.
+10.1.2.7.2 Lactoperoxidase
+In the preservation of raw milk, the antimicrobial
+lactoperoxidase (LP) system present in milk is of
+interest. This LP system offers an alternative, es-
+pecially in countries where it is not possible to
+cool the milk to protect it from spoilage.
+The system consists of LP (EC 1.11.1.7) and the
+substrates thiocyanate and H2O2. The enzyme,
+a glycoprotein (carbohydrate content 10%), con-
+sists of 612 amino acid residues (Mr 78,000, IP
+9.6) and Fe-protoporphyrin IX, which as the pros-
+thetic group carries out the catalysis, as described
+in 2.3.2.2. Thiocyanate takes part in this reaction
+process as the electron donor AH. Lactoperoxi-
+dase is one of the heat stable enzymes of milk, es-
+pecially when the structure is ﬁxed by Ca2⊕ions.
+It is still active after 30 min at 63 ◦C (neutral pH)
+and after 15 s at 72 ◦C, but it is inactive after only
+2.5 s at 80 ◦C. Acidiﬁcation (pH 5.3) accelerates
+the inactivation by liberating the Ca2⊕ions. After
+xanthine oxidase, LP is the most common enzyme
+in milk: ca. 30 mg/l.
+The thiocyanate concentration in milk depends on
+the feed, e. g., on the occurrence of glucosinolates
+(cf. 17.1.2.9.3). H2O2 is not a component of milk,
+but is supplied by bacteria, e. g., lactic acid bacte-
+ria.
+Hypothiocyanite is the main product formed from
+the hydrogen donor thiocyanate in LP catalysis.
+LP
+−→OSCN⊖+H2O
+SCN⊖+H2O2
+This compound is a bactericidal agent because it
+can oxidize the SH groups of structure-forming
+proteins and enzymes in bacteria. The LP sys-
+tem is used to prolong the shelf life of raw
+milk and pasteurized milk. H2O2 is produced
+here by the addition of glucose/glucose oxidase
+(cf. 2.7.2.1.1) and the concentration of thio-
+cyanate is increased by addition.
+In the production of fermented milk products, the
+LP system can inhibit the development of starter
+cultures.
+10.1.3 Processing of Milk
+Only a small amount of milk is sold to the con-
+sumer without processing (certiﬁed raw milk).
+The main part is subjected to a processing pro-
+cedure shown schematically in Fig. 10.14.
+Fig. 10.14. Treatment of milk
+10.1 Milk
+517
+518
+10 Milk and Dairy Products
+10.1.3.1 Puriﬁcation
+The milk is usually delivered in the cooled tank
+(at least −8 ◦C of a milk truck. For puriﬁcation, it
+is fed into a clariﬁer (self-cleaning disk separator)
+via a deaerating vessel. These separators can pro-
+cess either cold or warm milk (40 ◦C) at speeds of
+4500–8400 rpm with throughput capacities of up
+to 50,000 l/h.
+10.1.3.2 Creaming
+After heating to about 40 ◦C (increase in cream-
+ing efﬁciency by lowering the viscosity), the
+milk is separated into cream and skimmed
+milk in a cream separator. Cream separators
+have a nominal capacity of up to 25,000 l/h
+at speeds of 4700–6500 rpm. The fat content
+of the milk can be standardized by careful
+back-mixing.
+10.1.3.3 Heat Treatment
+The ﬂuid milk is heated to improve its durability
+and to kill disease-causing microorganisms. Heat
+treatments used are (cf. Fig. 10.15):
+Fig. 10.15. Heating of milk. 1–3 Pasteurization: 1 high
+temperature treatment, 2 short time and 3 long time heat
+treatment; 4 and 5 UHT treatment: 4 indirect and 5 dir-
+ect; 6 sterilization. a: Killing pathogenic microorgan-
+isms (Tubercle bacilli as labelling organism), b/c: inac-
+tivation of alkaline/acid phosphatase. d1, d2, d3 denat-
+uration (5, 40, 100%) of whey proteins. e: casein heat
+coagulation, f: start of milk browning
+•
+Thermization.
+The process involves heating under conditions
+that are milder than those of pasteurization,
+e. g., 57–68 ◦C. The number of bacteria is re-
+duced, e. g., for the production of cheese. The
+taste of the milk and the coagulation time dur-
+ing treatment with rennet are not impaired.
+•
+Pasteurization.
+The milk is treated: at high temperature
+(85 ◦C for 2–3 s) in a short-time, ﬂash process
+(72–75 ◦C/15–30 s) in plate heaters; or by the
+low temperature or holder process, in which it
+is heated at 63–66 ◦C for at least 30–32 min,
+with stirring, and is then cooled.
+•
+Ultrahigh Temperature (UHT) Treatment.
+The process involves indirect heating by coils
+or plates at 136–138 ◦C for 5–8 s, or direct
+heating by live steam injection at 140–145 ◦C
+for 2–4 s, followed by aseptic packaging.
+To prevent dilution or concentration of the
+milk, the amount of injected steam must be
+controlled in such a way that it corresponds to
+the amount of water withdrawn during expan-
+sion under vacuum.
+•
+Bactotherm Process.
+This is a combination of centrifugal steriliza-
+tion in bactofuges (65 to 70 ◦C) and UHT heat-
+ing of the separated sediment (2–3% of the
+milk), followed by recombination. Since the
+total amount of milk is not heated in this pro-
+cess, the taste is improved. The storability is
+ca. 8–10 days.
+•
+Sterilization.
+Milk in retail packages is heated in autoclaves
+at 107–115 ◦C/20–40 min, 120–130 ◦C/
+8–12 min.
+10.1.3.4 Homogenization
+Homogenization is conducted to stabilize the
+emulsion milk by reducing the size of the fat
+globules. This is achieved by high-pressure
+homogenization (up to 35 MPa, 50–75 ◦C). In
+principle,
+the
+high-pressure
+homogenizer
+is
+a high-pressure pump which presses the product
+through a homogenizing valve. The fat globules
+are reduced in size to a diameter of <1 µm by
+turbulence, cavitation and shear forces, resulting
+in a ca. 10 fold increase in the surface area.
+The membranes of the reduced fat globules
+are formed by the uptake of caseins and whey
+proteins.
+10.1.3.5 Reactions During Heating
+Heat treatment affects several milk constituents.
+Casein, strictly speaking, is not a heat-coagulable
+protein; it coagulates only at very high tempera-
+tures (cf. Fig. 10.15). Heating at 120 ◦C for 5 h
+dephosphorylates sodium or calcium caseinate
+solutions (100% and 85%, respectively) and
+releases 15% of the nitrogen in the form of low
+molecular weight fragments.
+However, temperature and pH strongly affect ca-
+sein association and cause changes in micellular
+structure (cf. 10.1.2.1.2 and 10.1.2.1.3). An ex-
+ample of such a change is the pH-dependent heat
+coagulation of skim milk. The coagulation tem-
+perature drops with decreasing pH (Fig. 10.16
+and 10.9). Salt concentration also has an inﬂu-
+ence, e. g., the heat stability of milk decreases
+with a rise in the content of free calcium.
+All pasteurization processes supposedly kill the
+pathogenic microorganisms in milk. The inacti-
+vation of the alkaline phosphatase is used in de-
+termining the effectiveness of pasteurization. At
+higher temperatures or with longer heating times,
+the whey proteins start to denature – this coin-
+cides with the complete inactivation of acid phos-
+phatase. Denatured whey proteins, within the pH-
+range of their isoelectric points, cease to the sol-
+uble and coagulate together with casein due to
+souring or chymosin action of the milk. Such co-
+precipitation of the milk proteins is of importance
+Fig. 10.16. Thermal coagulation of skim milk
+in some milk processing (as in cottage cheese pro-
+duction). The thermal stability of whey proteins is
+illustrated in Fig. 10.17.
+Heat treatment of milk activates thiol groups;
+e. g., a thiol-disulﬁde exchange reaction occurs
+between
+κ-casein
+and
+β-lactoglobulin.
+This
+reaction reduces the vulnerability of κ-casein
+to chymosin, resulting in a more or less strong
+retardation of the rennet coagulation of heated
+milk.
+Further changes induced by heating of milk are:
+•
+Calcium phosphate precipitation on casein mi-
+celles.
+•
+Maillard reactions between lactose and amino
+groups (e. g. lysine) which, in a classical ster-
+ilization process, causes browning of milk and
+formation of hydroxymethyl furfural (HMF).
+•
+δ-Lactone and methyl ketone formation from
+glycerides esteriﬁed with hydroxy- or keto-
+fatty acids.
+•
+Degradation of vitamin B1, B6, B12, folic acid
+and vitamin C. Losses of 10–30% in the pro-
+duction of UHT milk are possible. Steriliza-
+tion destroys ca. 50% of the vitamins B1, B6
+and folic acid and up to 100% of vitamin C
+and B12.
+Fig. 10.17. Denaturation of whey proteins by heating at
+various temperatures for 30 min. 1 Total whey protein,
+2 β-lactoglobulin, 3 α-lactalbumin, 4 proteose peptone,
+5 immunoglobulin, 6 serum albumin
+10.1 Milk
+519
+520
+10 Milk and Dairy Products
+•
+Changes in membranes of milk fat globules,
+which affect the cream separation property of
+the globules.
+Detailed studies have shown that the rate of
+several reactions which occur during heating of
+milk, e. g., thiamine and lysine degradations,
+formation of HMF and nonenzymic browning,
+can be calculated over a great temperature-time
+range (including extended storage) by application
+of a second-order rate law. Assuming an average
+activation energy of Ea = 102 kJ/mole, a “chem-
+ical effect” C∗= 1 has been deﬁned which gives
+a straight line in a log t vs. T−1 diagram, from
+which the thiamine loss is seen to be approx.
+0.8 mg/l (Fig. 10.18). Other lines in Fig. 10.18
+represent a power of ten of heat treatment
+and chemical reactions (C∗= 10−1,10−2,..., or
+101,102,...). The pigments formed in a browning
+reaction become visible only in the range of
+C∗= 10.
+Quality deterioration in the form of nutritional
+degradation, changes in color or development of
+off-ﬂavor have also been predicted for other foods
+by application of a suitable mathematical model.
+Fig. 10.18. Chemical reactions in heat-treated milk.
+(“Chemical effect” C∗= 1: losses of approx. 3% thi-
+amine and approx. 0.7% lysine and formation of ap-
+prox. 0.8 mg/l HMF); commonly used heat treatments:
+1 high heat, 2 short time heating, 3 prolonged heating,
+4 UHT treatment, 5 boiling, 6 sterilization (according
+to Kessler, 1983).
+HMF: Hydroxymethylfurfural
+In most cases the loss of quality ﬁts a zero- or
+ﬁrst-order rate law. Knowledge of the rate con-
+stant allows one to predict the extent of reaction
+for any time.
+The inﬂuence of temperature on the reaction
+rate follows the Arrhenius equation (cf. 2.5.4).
+Thus by studying a reaction and measuring the
+rate constants at two or three high temperatures,
+one could then extrapolate with a straight line
+to a lower temperature and predict the rate of
+the reaction at the desired lower temperature.
+However, these data allow only a prediction of
+the shelf life when the physical and chemical
+properties of the components of a food do
+not alter with temperature. For example, as
+temperature rises a solid fat goes into a liqu-
+id state. The reactants may be mobile in the
+liquid fat and not in the solid phase. Thus,
+shelf life will be underestimated for the lower
+temperature.
+10.1.4 Types of Milk
+Milk is consumed in the following forms:
+•
+Raw ﬂuid milk (high quality milk), which has
+to comply with strict hygienic demands.
+•
+Whole milk is heat-treated and contains at least
+3% fat. It can be a standardized whole milk ad-
+justed to a predetermined fat content, in which
+case the fat content has to be at least 3.5%.
+•
+Low-fat milk is heat-treated and the cream is
+separated. The fat content is 1.5–2%.
+•
+Skim milk is heat-treated and the fat content is
+less than 0.3%.
+•
+Reconstituted milk is most common in regions
+where milk production is not feasible (e. g.
+many Japanese cities). For production, melted
+butter fat is emulsiﬁed in a suspension of
+skim milk powder at 45 ◦C. The “cream”
+with a fat content of 20–30% is subjected to
+two-stage homogenization (20 and 5 MPa,
+55–60 ◦C) and then diluted with the skim milk
+suspension.
+•
+Filled milk is less expensive because the butter
+fat is replaced with a plant fat.
+•
+Toned milk is a blend of a fat-rich fresh milk
+and reconstitued skim milk in which the non-
+fat solids are “toned up”. Addition of water
+“tones down” the fat and nonfat solids.
+Fig. 10.19. Schematic presentation of milk processing
+10.2 Dairy Products
+521

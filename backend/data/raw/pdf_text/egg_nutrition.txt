@@ -1,29 +1,3 @@
-Citation: Puglisi, M.J.; Fernandez,
-M.L. The Health Beneﬁts of Egg
-Protein. Nutrients 2022, 14, 2904.
-https://doi.org/10.3390/nu14142904
-Academic Editors: Yongting Luo and
-Junjie Luo
-Received: 21 June 2022
-Accepted: 12 July 2022
-Published: 15 July 2022
-Publisher’s Note: MDPI stays neutral
-with regard to jurisdictional claims in
-published maps and institutional afﬁl-
-iations.
-Copyright:
-© 2022 by the authors.
-Licensee MDPI, Basel, Switzerland.
-This article is an open access article
-distributed
-under
-the
-terms
-and
-conditions of the Creative Commons
-Attribution (CC BY) license (https://
-creativecommons.org/licenses/by/
-4.0/).
 nutrients
 Review
 The Health Beneﬁts of Egg Protein
@@ -58,6 +32,18 @@ In fact, eggs are considered to be the perfect protein source, serving as the st
 comparison for other protein sources [8] According to the 2018 USDA National Nutrient
 Database, one large egg contains 6.3 g of protein distributed between the yolk and white
 portions (3.6 g in egg white and 2.7 g in egg yolk) [9].
+Citation: Puglisi, M.J.; Fernandez,
+M.L. The Health Beneﬁts of Egg
+Protein. Nutrients 2022, 14, 2904.
+https://doi.org/10.3390/nu14142904
+Academic Editors: Yongting Luo and
+Junjie Luo
+Received: 21 June 2022
+Accepted: 12 July 2022
+Published: 15 July 2022
+Publisher’s Note: MDPI stays neutral
+with regard to jurisdictional claims in
+published maps and institutional afﬁl-
 The composition and function of protein in egg whites and egg yolk varies and is
 associated with biological and antimicrobial activities [9]. For example, in egg whites,
 ovotransferrin binds metal ions, ovomucin has antiviral properties, and lysozyme dis-
@@ -66,14 +52,26 @@ representing the HDL subfraction in the egg yolk and phosvitin, which protects a
 lipid oxidation by binding heavy metal ions [8]. One thing that needs to be taken into
 consideration regarding eggs is the presence of egg allergies that have been identiﬁed in
 children [10], which are due mostly to the proteins present in the egg whites [11].
+iations.
+Copyright:
+© 2022 by the authors.
+Licensee MDPI, Basel, Switzerland.
+This article is an open access article
+distributed
+under
+the
+terms
+and
 Egg protein confers various health beneﬁts which are advantageous for individuals
 across the life spectrum [11]. In the next sections, the role of egg protein in supporting
 skeletal muscle synthesis, protecting against sarcopenia, decreasing appetite, preventing
 protein deﬁciency, and contributing to normal child growth will be discussed.
+conditions of the Creative Commons
+Attribution (CC BY) license (https://
+creativecommons.org/licenses/by/
+4.0/).
 Nutrients 2022, 14, 2904. https://doi.org/10.3390/nu14142904
 https://www.mdpi.com/journal/nutrients
-
-
 Nutrients 2022, 14, 2904
 2 of 14
 2. Egg Protein and Prevention of Malnutrition in Children
@@ -129,8 +127,6 @@ Skeletal muscle plays a major role in overall health, one that is often only app
 in relationship to improvement of body composition [29,30]. Enhancing skeletal muscle
 health improves insulin sensitivity [31] and physical function [32] and reduces the risks
 of prehypertension and hypertension, cardiovascular disease [30,33], osteoporosis, and
-
-
 Nutrients 2022, 14, 2904
 3 of 14
 the overall risk of all-cause mortality [34]. Resistance exercise training, also important for
@@ -186,8 +182,6 @@ high-protein diet focusing on eggs as a primary protein source when compared to 
 lower in protein. However, the high-protein diet provided 1.2 g protein/kg body weight
 per day, below the recommended intake, and timing of protein to space it out equally
 throughout the day was not emphasized for participants.
-
-
 Nutrients 2022, 14, 2904
 4 of 14
 In contrast to the studies above, a daily snack consisting of 15 g egg white protein and
@@ -244,8 +238,6 @@ to egg whites after resistance training. This may be related to the other conten
 yolk, such as phospholipids, microRNAs, or other micronutrients [59]. Additional research
 by Evans et al. [60] indicates increased muscle protein synthesis for older adults after
 supplementation with fortetropin, a complex of protein and lipids made from egg yolk
-
-
 Nutrients 2022, 14, 2904
 5 of 14
 that has been shown to stimulate the mammalian target of rapamycin (mTOR). The lipid
@@ -300,8 +292,6 @@ resistance and sarcopenia are adding weight training to sensitize skeletal muscl
 especially in that 24-hour post-exercise “anabolic window” [71] and increasing dietary
 protein intake to overcome this resistance [72]. Most researchers in the ﬁeld recommend
 1.0–1.3 g of protein/kg of body weight/day for older adults to counter catabolism, with a
-
-
 Nutrients 2022, 14, 2904
 6 of 14
 potential need of up to 2.0 g of protein/kg of body weight/day for those with severe injury,
@@ -357,8 +347,6 @@ adequate dietary protein can lead to progression of muscle loss and sarcopenia. 
 weight loss to improve the health of older individuals with sarcopenic obesity would be
 done with a diet with various high-quality protein foods (as described above) and physical
 activity, including resistance exercise, to preserve muscle mass.
-
-
 Nutrients 2022, 14, 2904
 7 of 14
 In the context of an ~1800 kcal diet, older men and women (~70 years of age) in
@@ -398,48 +386,48 @@ the myocardium. More research is needed, but the potential antioxidant effect of
 in eggs is promising. The effects of egg protein on body composition and the practical
 implications are shown on Table 1.
 Table 1. Amounts of consumed egg protein, effects on skeletal muscle health, and practical implications.
-Subject
-Population
 Weight
 Management
+Subject
+Population
 or Loss
-Protein Intake (g/kg
-Body Weight/Day or
-g in Single Dose)
-Protein
-Metabolism/Body
-Composition
-Practical
-Implications
-Authors
 Healthy
 young men
 N/A
+Slight reduction,
+Young female
+no difference
+between groups
+athletes
+Protein Intake (g/kg
+Body Weight/Day or
+Protein
+Metabolism/Body
+g in Single Dose)
+Composition
+Maximal muscle
+protein synthesis
 0, 5, 10, 20, 40 g
 egg protein after
 resistance exercise
-Maximal muscle
-protein synthesis
 reached with
 20 g dose
-20 g egg protein is
-optimal single dose
-for young males
-Moore et al.
-(2009) [46]
-Young female
-athletes
-Slight reduction,
-no difference
-between groups
-1.0 (daily 15 g egg
-white protein) vs. 1.2
-for 8 weeks
 No differences in
 body composition
+1.0 (daily 15 g egg
+white protein) vs. 1.2
 or strength
 changes between
+for 8 weeks
 groups
+Practical
+Implications
+Authors
+20 g egg protein is
+optimal single dose
+Moore et al.
+(2009) [46]
+for young males
 15 g dose egg protein
 as part of
 1.2 g/kg/day is not
@@ -447,110 +435,27 @@ sufﬁcient for
 female athletes
 Hida et al.
 (2012) [48]
-
-
 Nutrients 2022, 14, 2904
 8 of 14
 Table 1. Cont.
-Subject
-Population
 Weight
 Management
+Subject
+Population
 or Loss
-Protein Intake (g/kg
-Body Weight/Day or
-g in Single Dose)
-Protein
-Metabolism/Body
-Composition
-Practical
-Implications
-Authors
 Young males
 No change
-1.3 (daily 15 g egg
-white protein) with
-and without exercise
-vs. no supplement
-with exercise for
-5 weeks
-Egg white protein
-and resistance
-exercise increased
-skeletal muscle
-mass and strength,
-reduced fat mass
-15 g dose egg protein
-as part of
-1.3 g/kg/day diet
-may be sufﬁcient for
-young resistance
-trained males
-Kato et al.
-(2011) [50]
 Resistance-trained
-young males
 Increased for
+young males
 both groups
-1.5 for both groups,
-3 whole eggs vs.
-isonitrogenous source
-of egg whites
-Improved body
-composition for
-both groups, larger
-reduction in body
-fat percentage and
-greater increases in
-strength for the
-whole egg group,
-trend of greater
-lean body mass
-gains with
-whole eggs
-Three whole eggs or
-an isonitrogenous
-amount of egg whites
-is potentially
-beneﬁcial for trained
-males consuming
-1.5 g/kg/day of
-protein, whole eggs
-may have
-added beneﬁts
-Bagheri et al.
-(2021) [51]
 Older men
 and women
 No change
-0.9 vs. 1.2 (focused on
-egg protein) for
-12 weeks
-No difference in
-body composition
-or skeletal muscle
-1.2 g/kg/day, with a
-focus on eggs is not
-sufﬁcient for older
-individuals
-Iglay et al.
-(2009) [49]
 Older men
 and women
 Loss for both
 groups (−3.3%)
-0.8 vs. 1.4 with 3 eggs
-per day for 12 weeks
-Lean body mass
-preserved with 1.4,
-reduced for 0.8
-Sarcopenia is
-countered by
-1.4 g/kg/day with
-eggs vs. 0.8 during
-weight loss
-Wright et al.
-(2018) [83]
 4. Egg Proteins, Immunity and Protection against Chronic Disease
 As mentioned above, egg proteins have demonstrated anti-microbial and immuno-
 protective properties, which could have potential therapeutic applications [9]. Immunoglob-
@@ -574,8 +479,87 @@ also been recognized for its anticancer and antihypertensive properties [94]. Fu
 lisozome has also been shown to protect against inﬂammatory bowel disease [97].
 Controversial data exist regarding the association between egg intake and cancer in
 different meta-analyses. While some studies found an association between egg intake
-
-
+Protein Intake (g/kg
+Body Weight/Day or
+Protein
+Metabolism/Body
+g in Single Dose)
+Composition
+Egg white protein
+1.3 (daily 15 g egg
+white protein) with
+and without exercise
+and resistance
+exercise increased
+skeletal muscle
+mass and strength,
+vs. no supplement
+with exercise for
+reduced fat mass
+5 weeks
+Improved body
+composition for
+both groups, larger
+reduction in body
+fat percentage and
+greater increases in
+1.5 for both groups,
+3 whole eggs vs.
+isonitrogenous source
+strength for the
+whole egg group,
+of egg whites
+trend of greater
+lean body mass
+gains with
+whole eggs
+No difference in
+body composition
+or skeletal muscle
+0.9 vs. 1.2 (focused on
+egg protein) for
+12 weeks
+Lean body mass
+preserved with 1.4,
+0.8 vs. 1.4 with 3 eggs
+per day for 12 weeks
+reduced for 0.8
+Practical
+Implications
+Authors
+15 g dose egg protein
+as part of
+1.3 g/kg/day diet
+may be sufﬁcient for
+Kato et al.
+(2011) [50]
+young resistance
+trained males
+Three whole eggs or
+an isonitrogenous
+amount of egg whites
+is potentially
+beneﬁcial for trained
+Bagheri et al.
+(2021) [51]
+males consuming
+1.5 g/kg/day of
+protein, whole eggs
+may have
+added beneﬁts
+1.2 g/kg/day, with a
+focus on eggs is not
+Iglay et al.
+(2009) [49]
+sufﬁcient for older
+individuals
+Sarcopenia is
+countered by
+1.4 g/kg/day with
+eggs vs. 0.8 during
+Wright et al.
+(2018) [83]
+weight loss
 Nutrients 2022, 14, 2904
 9 of 14
 and increased incidence risk [98], others failed to ﬁnd this connection [99,100]. How-
@@ -627,35 +611,9 @@ in older adults [83]. Egg protein has also been shown to protect against infecti
 act as a hypotensive agent [3,33,34], and even protect against cancer [101,102], Finally, egg
 protein is associated with reductions in appetite and weight loss [108,109,112]. The main
 beneﬁcial effects of egg protein are presented in Figure 1.
-
-
 Nutrients 2022, 14, 2904
 10 of 14
-Other
 Malnutrition
-Satiety
-Muscle 
-Health
-Low Cost
-Kwashorkor
-Malnutrition
-Skeletal muscle 
-health
-Muscle mass
-Blood pressure
-Decreases kcal 
-intake in Next 
-meal
-Body weight
-Egg 
-Protein
-Height/children
-Sarcopenia in 
-the elderly
-Anti-Cancer 
-effects
-Protects vs 
-infection
 Figure 1. Egg protein has been shown to decrease malnutrition, improve muscle health, increase
 satiety, and therefore contribute to weight loss. It has other additional beneﬁts including protection
 against infection, decreases in blood pressure, as well as an anti-cancer effect.
@@ -696,8 +654,30 @@ Diet Assoc. 1994, 94, 884–887. [CrossRef]
 9.
 Fernandez, M.L.; Andersen, C.J. Eggs, Composition and Health. In Encyclopedia of Food and Health; Finglas, P.M., Toldra, F.,
 Caballero, B., Eds.; Elsevier: Amsterdam, The Netherlands, 2015; pp. 470–475.
-
-
+Low Cost
+Kwashorkor
+Malnutrition
+Height/children
+Decreases kcal 
+intake in Next 
+meal
+Body weight
+Egg 
+Protein
+Protects vs 
+infection
+Blood pressure
+Satiety
+Anti-Cancer 
+effects
+Muscle
+Health
+Skeletal muscle 
+health
+Muscle mass
+Sarcopenia in 
+the elderly
+Other
 Nutrients 2022, 14, 2904
 11 of 14
 10.
@@ -783,8 +763,6 @@ T.B. Strength, but not muscle mass, is associated with mortality in the health, 
 Gerontol. Ser. A Biol. Sci. Med. Sci. 2006, 61, 72–77. [CrossRef]
 35.
 Phillips, S.M. Protein requirements and supplementation in strength sports. Nutrition 2004, 20, 689–695. [CrossRef]
-
-
 Nutrients 2022, 14, 2904
 12 of 14
 36.
@@ -869,8 +847,6 @@ isonitrogenous amounts of egg whites in young men. Am. J. Clin. Nutr. 2017, 106,
 59.
 Santos, H.O.; Gomes, G.K.; Schoenfeld, B.J.; de Oliveira, E.P. The Effect of Whole Egg Intake on Muscle Mass: Are the Yolk and Its
 Nutrients Important? Int. J. Sport Nutr. Exerc. Metab. 2021, 31, 514–521. [CrossRef]
-
-
 Nutrients 2022, 14, 2904
 13 of 14
 60.
@@ -960,8 +936,6 @@ centers: A pilot randomized controlled trial. Nutr. Health 2021, 3, 026010602110
 85.
 Kido, K.; Koshinaka, K.; Iizawa, H.; Honda, H.; Hirota, A.; Nakamura, T.; Arikawa, M.; Ra, S.G.; Kawanaka, K. Egg White Protein
 Promotes Developmental Growth in Rodent Muscle Independently of Leucine Content. J. Nutr. 2022, 152, 117–129. [CrossRef]
-
-
 Nutrients 2022, 14, 2904
 14 of 14
 86.
@@ -1033,5 +1007,3 @@ subjects. J. Am. Coll. Nutr. 2005, 24, 510–515. [CrossRef] [PubMed]
 112. Vander Wal, J.S.; Gupta, A.; Khosla, P.; Dhurandhar, N.V. Egg breakfast enhances weight loss. Int. J. Obes. 2008, 32, 1545–1551.
 113. Rueda, J.M.; Khosla, P. Impact of breakfasts (with or without Eggs) on body weight regulation and blood lipids in university
 students over a 14-week semester. Nutrients 2013, 5, 5097–5113. [CrossRef] [PubMed]
-
-

@@ -1,135 +1,58 @@
-import os
-import json
+"""
+clean_text.py
 
+Orchestrates the conversion of extracted .txt files into clean,
+context-aware, structured JSON documents.
+"""
+
+import argparse
+import json
+import os
 from pdf_text_cleaner import PDFTextCleaner
 
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--input_dir", default="backend/data/raw/pdf_text")
+    parser.add_argument("--output_dir", default="backend/data_pipeline/clean/research")
+    args = parser.parse_args()
 
-input_dir = "backend/data/raw/pdf_text"
+    os.makedirs(args.output_dir, exist_ok=True)
 
-output_dir = "backend/data_pipeline/clean/pdf_json"
-
-os.makedirs(output_dir, exist_ok=True)
-
-
-for filename in os.listdir(input_dir):
-
-    if not filename.endswith(".txt"):
-
-        continue
-
-
-    input_path = os.path.join(
-
-        input_dir,
-
-        filename
-
-    )
-
-
-    with open(
-
-        input_path,
-
-        "r",
-
-        encoding="utf-8"
-
-    ) as f:
-
-        text = f.read()
-
-
-    try:
+    for filename in os.listdir(args.input_dir):
+        if not filename.endswith(".txt"): continue
+        
+        input_path = os.path.join(args.input_dir, filename)
+        with open(input_path, "r", encoding="utf-8") as f:
+            text = f.read()
 
         cleaner = PDFTextCleaner(text)
+        sections = cleaner.detect_sections().get_sections()
 
-        sections = (
+        # Augment with additional required fields
+        final_sections = []
+        for i, sec in enumerate(sections):
+            sec["section_id"] = f"section_{i:03d}"
+            sec["content_flags"] = {
+                "contains_table_reference": "table" in sec["text"].lower(),
+                "contains_formula": sec["category"] == "formula_or_equation",
+                "contains_sequence_data": sec["category"] == "sequence_data"
+            }
+            final_sections.append(sec)
 
-            cleaner
+        article = {
+            "document": {
+                "title": os.path.splitext(filename)[0],
+                "source": filename,
+                "source_type": "pdf"
+            },
+            "sections": final_sections
+        }
 
-            .extract_article_content()
+        output_path = os.path.join(args.output_dir, os.path.splitext(filename)[0] + ".json")
+        with open(output_path, "w", encoding="utf-8") as f:
+            json.dump(article, f, ensure_ascii=False, indent=4)
 
-            .remove_page_artifacts()
+        print(f"Cleaned: {filename}")
 
-            .detect_sections()
-
-            .clean_sections()
-
-            .get_sections()
-
-        )
-
-
-    except ValueError as error:
-
-        print(
-
-            f"Skipped {filename}: {error}"
-
-        )
-
-        continue
-
-
-    article = {
-
-        "title": filename.replace(
-
-            ".txt",
-
-            ""
-
-        ),
-
-        "sections": sections
-
-    }
-
-
-    output_filename = filename.replace(
-
-        ".txt",
-
-        ".json"
-
-    )
-
-
-    output_path = os.path.join(
-
-        output_dir,
-
-        output_filename
-
-    )
-
-
-    with open(
-
-        output_path,
-
-        "w",
-
-        encoding="utf-8"
-
-    ) as f:
-
-        json.dump(
-
-            article,
-
-            f,
-
-            ensure_ascii=False,
-
-            indent=4
-
-        )
-
-
-    print(
-
-        f"Cleaned: {output_filename}"
-
-    )
+if __name__ == "__main__":
+    main()

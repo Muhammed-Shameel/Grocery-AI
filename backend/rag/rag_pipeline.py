@@ -5,6 +5,7 @@ from retrieval.retriever import Retriever
 from prompt_builder.question_understanding import QuestionUnderstanding
 from retrieval.context_selector import ContextSelector
 from prompt_builder.llm_analyser import LLMQuestionAnalyzer
+from prompt_builder.query_contextualizer import QueryContextualizer
 
 
 class RAGPipeline:
@@ -22,6 +23,8 @@ class RAGPipeline:
                 self.llm
             )
         )
+        
+        self.contextualizer = QueryContextualizer(self.llm)
 
         self.retriever = Retriever(
             self.db
@@ -32,11 +35,14 @@ class RAGPipeline:
         )
 
 
-    def ask(self, question):
+    def ask(self, question, history=None):
+        # 1. Contextualize the question
+        standalone_query = self.contextualizer.contextualize(question, history or [])
 
+        # 2. Analyze the standalone query
         question_understander = (
             QuestionUnderstanding(
-                question,
+                standalone_query,
                 self.llm_analyzer
             )
         )
@@ -66,7 +72,7 @@ class RAGPipeline:
 
         prompt = (
             self.prompt_builder.build_prompt(
-                question,
+                standalone_query,
                 selected_context,
                 question_understander
             )
@@ -85,7 +91,9 @@ class RAGPipeline:
 
                 "section": chunk["section"],
 
-                "score": score
+                "score": score,
+                "category": chunk.get("category", "General"),
+                "quality": chunk.get("quality", {"is_clean": True})
 
             })
 

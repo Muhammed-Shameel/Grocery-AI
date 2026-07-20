@@ -1,561 +1,91 @@
+"""
+pdf_text_cleaner.py
+
+Expert structural reconstruction and context-aware content classification.
+"""
+
 import re
 
-
 class PDFTextCleaner:
-
     def __init__(self, text):
-
         self.text = text
-
         self.sections = []
 
-
-    # ==================================================
-    # 1. EXTRACT ARTICLE CONTENT
-    # ==================================================
-
-    def extract_article_content(self):
-
-        # ------------------------------------------
-        # Find Abstract
-        # ------------------------------------------
-
-        abstract_match = re.search(
-
-            r"\babstract\b\s*:?",
-
-            self.text,
-
-            flags=re.IGNORECASE
-
-        )
-
-
-        if abstract_match is None:
-
-            raise ValueError(
-
-                "Abstract section not found"
-
-            )
-
-
-        # Keep everything from Abstract onward
-
-        self.text = self.text[
-
-            abstract_match.start():
-
-        ]
-
-
-        # ------------------------------------------
-        # Remove References section
-        # ------------------------------------------
-
-        references_match = re.search(
-
-            r"(?m)^\s*references\s*$",
-
-            self.text,
-
-            flags=re.IGNORECASE
-
-        )
-
-
-        if references_match is not None:
-
-            self.text = self.text[
-
-                :references_match.start()
-
-            ]
-
-
-        return self
-
-
-    # ==================================================
-    # 2. REMOVE PAGE/JOURNAL ARTIFACTS
-    # ==================================================
-
-    def remove_page_artifacts(self):
-
-        # ------------------------------------------
-        # Page numbers
-        #
-        # Example:
-        #
-        # 3 of 12
-        # ------------------------------------------
-
-        self.text = re.sub(
-
-            r"\b\d+\s+of\s+\d+\b",
-
-            "",
-
-            self.text,
-
-            flags=re.IGNORECASE
-
-        )
-
-
-        # ------------------------------------------
-        # Journal metadata
-        #
-        # Example:
-        #
-        # Nutrients 2022, 14, 2904
-        # ------------------------------------------
-
-        self.text = re.sub(
-
-            r"\b[A-Z][A-Za-z]+\s+\d{4},\s+\d+,\s+\d+\b",
-
-            "",
-
-            self.text
-
-        )
-
-
-        # ------------------------------------------
-        # Normalize PDF ligatures
-        # ------------------------------------------
-
-        ligatures = {
-
-            "ﬁ": "fi",
-
-            "ﬂ": "fl",
-
-            "ﬀ": "ff",
-
-            "ﬃ": "ffi",
-
-            "ﬄ": "ffl",
-
-        }
-
-
-        for old, new in ligatures.items():
-
-            self.text = self.text.replace(
-
-                old,
-
-                new
-
-            )
-
-
-        return self
-
-
-    # ==================================================
-    # 3. CHECK WHETHER A LINE IS A VALID SECTION HEADING
-    # ==================================================
-
-    def is_valid_section_heading(self, line):
-
-        line = line.strip()
-
-
-        # ------------------------------------------
-        # Abstract
-        # ------------------------------------------
-
-        if re.match(
-            r"^abstract\s*:?",
-            line,
-            flags=re.IGNORECASE
-        ):
-
-            return True
-
-
-        # ------------------------------------------
-        # Only top-level numbered sections
-        #
-        # Required format:
-        #
-        # 1. Introduction
-        # 2. Methods
-        # 3. Results
-        #
-        # ------------------------------------------
-
-        match = re.match(
-
-            r"^(\d+)\.\s+(.+)$",
-
-            line
-
-        )
-
-
-        if match is None:
-
-            return False
-
-
-        title = match.group(2).strip()
-
-
-        # ------------------------------------------
-        # Reject anything that looks like a decimal
-        # or measurement/table fragment
-        # ------------------------------------------
-
-        if re.match(
-
-            r"^\d+(?:\.\d+)?\s*",
-
-            title
-
-        ):
-
-            return False
-
-
-        # ------------------------------------------
-        # Require a reasonable title
-        # ------------------------------------------
-
-        words = title.split()
-
-
-        if len(words) < 2:
-
-            return False
-
-
-        # ------------------------------------------
-        # Reject incomplete fragments
-        # ------------------------------------------
-
-        incomplete_endings = {
-
-            "of",
-            "with",
-            "for",
-            "and",
-            "or",
-            "a",
-            "an",
-            "the",
-            "to",
-            "vs",
-            "as",
-            "in",
-
-        }
-
-
-        if words[-1].lower() in incomplete_endings:
-
-            return False
-
-
-        # ------------------------------------------
-        # Require actual alphabetic content
-        # ------------------------------------------
-
-        if len(re.findall(r"[A-Za-z]", title)) < 5:
-
-            return False
-
-
-        return True
-
-
-    # ==================================================
-    # 4. DETECT SECTIONS
-    # ==================================================
+    def _is_technical_noise(self, line):
+        stripped = line.strip()
+        if len(stripped) < 10: return False
+        # Symbols density: very high for formulas/sequences
+        symbols = len(re.findall(r"[^a-zA-Z0-9\s]", stripped))
+        return (symbols / len(stripped)) > 0.3 or re.search(r"[A-Z]{3,}-[A-Z]{3,}", stripped)
+
+    def _is_heading(self, line):
+        s = line.strip()
+        if not s or len(s) > 80: return False
+        if s[-1] in ".?!": return False # Sentences aren't headings
+        # Exclude common table/figure markers
+        if any(kw in s.lower() for kw in ['table', 'figure', 'fig.']): return False
+        
+        is_numbered = bool(re.match(r'^\s*\d+(\.\d+)*\s+[A-Z].*', s))
+        is_title = bool(re.match(r'^\s*[A-Z][A-Za-z]+(\s+[A-Z][a-z]+)*\s*$', s))
+        is_caps = bool(re.match(r'^\s*[A-Z\s]{5,}\s*$', s))
+        
+        return (is_numbered or is_title or is_caps) and not self._is_technical_noise(s)
+
+    def _clean_title(self, title):
+        return re.sub(r'^\s*\d+(\.\d+)*\s*', '', title).strip()
 
     def detect_sections(self):
-
-        lines = self.text.splitlines()
-
-
+        lines = [l for l in self.text.splitlines() if not self._is_technical_noise(l)]
+        if not lines: return self
+        
         sections = []
-
-
-        current_section = None
-
-        current_text = []
-
-
-        for line in lines:
-
-            line = line.strip()
-
-
-            if not line:
-
-                continue
-
-
-            # ------------------------------------------
-            # Use the validation method
-            # ------------------------------------------
-
-            if self.is_valid_section_heading(line):
-
-
-                # Save previous section
-
-                if current_section is not None:
-
-                    sections.append({
-
-                        "title": current_section,
-
-                        "text": "\n".join(
-
-                            current_text
-
-                        )
-
-                    })
-
-
-                # Start new section
-
-                current_section = line
-
-                current_text = []
-
-
+        current_section = {"title": "Introduction", "text": []}
+        
+        # Lookahead-based heading validation
+        for i, line in enumerate(lines):
+            is_heading = self._is_heading(line)
+            
+            # Validation: Heading must not be followed by another heading
+            if is_heading:
+                next_line = lines[i+1] if i+1 < len(lines) else ""
+                if self._is_heading(next_line):
+                    is_heading = False # False positive
+            
+            if is_heading:
+                if current_section["text"]:
+                    self._finalize_section(current_section)
+                current_section = {"title": self._clean_title(line), "text": []}
             else:
-
-                current_text.append(line)
-
-
-        # ------------------------------------------
-        # Save final section
-        # ------------------------------------------
-
-        if current_section is not None:
-
-            sections.append({
-
-                "title": current_section,
-
-                "text": "\n".join(
-
-                    current_text
-
-                )
-
-            })
-
-
-        self.sections = sections
-
-
+                current_section["text"].append(line)
+        
+        self._finalize_section(current_section)
         return self
 
-
-    # ==================================================
-    # 5. CLEAN SECTION TEXT
-    # ==================================================
-
-    def clean_section_text(self, text):
-
-
-        # ------------------------------------------
-        # Remove page numbers
-        # ------------------------------------------
-
-        text = re.sub(
-
-            r"\b\d+\s+of\s+\d+\b",
-
-            "",
-
-            text,
-
-            flags=re.IGNORECASE
-
-        )
-
-
-        # ------------------------------------------
-        # Remove citation markers
-        #
-        # [40]
-        # [1-4]
-        # [1,2,3]
-        # ------------------------------------------
-
-        text = re.sub(
-
-            r"\[\s*\d+(?:\s*[-–,]\s*\d+)*\s*\]",
-
-            "",
-
-            text
-
-        )
-
-
-        # ------------------------------------------
-        # Remove figure/table references
-        #
-        # Figure 1
-        # Fig. 2A
-        # Table 3
-        # ------------------------------------------
-
-        text = re.sub(
-
-            r"\b(?:figure|fig\.?|table)\s+\d+[A-Za-z]?\b",
-
-            "",
-
-            text,
-
-            flags=re.IGNORECASE
-
-        )
-
-
-        # ------------------------------------------
-        # Remove URLs
-        # ------------------------------------------
-
-        text = re.sub(
-
-            r"https?://\S+",
-
-            "",
-
-            text
-
-        )
-
-
-        # ------------------------------------------
-        # Remove journal metadata
-        # ------------------------------------------
-
-        text = re.sub(
-
-            r"\b[A-Z][A-Za-z]+\s+\d{4},\s+\d+,\s+\d+\b",
-
-            "",
-
-            text
-
-        )
-
-
-        # ------------------------------------------
-        # Fix hyphenated words split by PDF lines
-        #
-        # high-
-        # quality
-        #
-        # becomes:
-        #
-        # high-quality
-        # ------------------------------------------
-
-        text = re.sub(
-
-            r"-\s*\n\s*",
-
-            "",
-
-            text
-
-        )
-
-
-        # ------------------------------------------
-        # Replace remaining line breaks with spaces
-        # ------------------------------------------
-
-        text = re.sub(
-
-            r"\s*\n\s*",
-
-            " ",
-
-            text
-
-        )
-
-
-        # ------------------------------------------
-        # Remove repeated spaces
-        # ------------------------------------------
-
-        text = re.sub(
-
-            r"\s+",
-
-            " ",
-
-            text
-
-        )
-
-
-        return text.strip()
-
-
-    # ==================================================
-    # 6. CLEAN ALL SECTIONS
-    # ==================================================
-
-    def clean_sections(self):
-
-        cleaned_sections = []
-
-
-        for section in self.sections:
-
-
-            cleaned_text = self.clean_section_text(
-
-                section["text"]
-
-            )
-
-
-            # ------------------------------------------
-            # Remove empty sections
-            # ------------------------------------------
-
-            if not cleaned_text:
-
-                continue
-
-
-            cleaned_sections.append({
-
-                "title": section["title"],
-
-                "text": cleaned_text
-
-            })
-
-
-        self.sections = cleaned_sections
-
-
-        return self
-
-
-    # ==================================================
-    # 7. RETURN SECTIONS
-    # ==================================================
+    def _finalize_section(self, section):
+        body = "\n".join(section["text"]).strip()
+        if not body: return # Reject only completely empty sections
+        
+        cat, relevant, score = self._classify(section['title'], body)
+        
+        # Consider it clean if it passes basic content relevance
+        is_clean = len(body) > 20
+        
+        self.sections.append({
+            "title": section["title"],
+            "text": body,
+            "category": cat,
+            "rag_relevant": relevant,
+            "relevance_score": score,
+            "quality": {"is_clean": is_clean}
+        })
+
+    def _classify(self, title, text):
+        t = (title + " " + text).lower()
+        # High confidence categorization
+        if any(kw in t for kw in ['protein', 'fat', 'lactose', 'mineral', 'vitamins']): return 'food_composition', True, 0.98
+        if any(kw in t for kw in ['storage', 'safety', 'pasteur', 'preservation']): return 'food_processing', True, 0.95
+        if len(text) < 100: return 'noise', False, 0.1
+        return 'general_food_science', True, 0.7
 
     def get_sections(self):
-
         return self.sections

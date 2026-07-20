@@ -1,7 +1,12 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from api.model import QuestionRequest
+from pydantic import BaseModel
+from typing import List, Optional
 from rag.rag_pipeline import RAGPipeline
+
+class QuestionRequest(BaseModel):
+    question: str
+    history: Optional[List[dict]] = None
 
 pipeline = RAGPipeline()
 app = FastAPI(
@@ -34,4 +39,4 @@ def home():
 
 @app.post("/ask")
 def ask(request : QuestionRequest):
-    return pipeline.ask(request.question)
+    return pipeline.ask(request.question, request.history)
