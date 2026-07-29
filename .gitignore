@@ -8,6 +8,11 @@ __pycache__/
 *.pyc
 *.pyo
 
+#dataset
+cv/datasets/
+
+cv/models
+
 # IDE/Editor
 .ipynb_checkpoints/
 .vscode/
