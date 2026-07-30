@@ -16,8 +16,8 @@ hybrid = HybridChunker(
     input_dir=input_dir,
     output_dir=output_dir,
     embeddings=embeddings,
-    chunk_size=1000,
-    chunk_overlap=200
+    chunk_size=1500,
+    chunk_overlap=300
 )
 
 chunks = hybrid.chunk()
