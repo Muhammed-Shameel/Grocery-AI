@@ -6,21 +6,17 @@ class RecursiveSectionMaker():
     def __init__(
         self,
         input_dir,
-        min_words=100,
-        max_words=500,
+        chunk_overlap=100,
+        chunk_size=500,
         source_type=None
     ):
         self.input_dir = input_dir
-        self.min_words = min_words
-        self.max_words = max_words
+        self.chunk_overlap = chunk_overlap
+        self.chunk_size = chunk_size
         self.source_type = source_type
         self.raw_documents = []
-
         self.recursive_sections  = []
 
-
-        
-        
         
     def load_documents(self):
         for filename in os.listdir(self.input_dir):
@@ -61,7 +57,22 @@ class RecursiveSectionMaker():
                 })
         return self
     
-    
+    def recursive_split(self):
+        splitter = RecursiveCharacterTextSplitter(
+            chunk_size= self.chunk_size,
+            chunk_overlap=self.chunk_overlap
+        )
+        for section in self.raw_documents:
+            text = section["text"]
+            chunks = splitter.split_text(text)
+            for chunk in chunks:
+                new_chunk = section.copy()
+                new_chunk["text"] = chunk
+                self.recursive_sections.append(new_chunk)
+        return self
+            
+    def get_sections(self):
+        return self.recursive_sections
     
     
     
