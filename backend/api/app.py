@@ -1,3 +1,4 @@
+import os
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
@@ -29,12 +30,16 @@ app = FastAPI(
     version="2.0.0",
     docs_url="/docs"
 )
+# CORS: the frontend runs on a different origin than this backend, so the
+# browser needs explicit permission. Configure it without touching code by
+# setting BACKEND_CORS_ORIGINS (comma-separated) on Render, e.g.
+#   https://your-app.vercel.app
+# Local dev defaults to the Vite dev server.
+_default_origins = "http://localhost:5173,http://127.0.0.1:5173"
+_cors_origins = [o.strip() for o in os.getenv("BACKEND_CORS_ORIGINS", _default_origins).split(",") if o.strip()]
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "http://127.0.0.1:5173",
-    ],
+    allow_origins=_cors_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
