@@ -9,8 +9,11 @@ class EmbeddingService:
 
     def __init__(self):
 
+        # voyage-3.5+ / voyage-4 models live on the new API endpoint,
+        # not the legacy one the SDK defaults to.
         self.client = voyageai.Client(
-            api_key=os.getenv("VOYAGE_API_KEY")
+            api_key=os.getenv("VOYAGE_API_KEY"),
+            base_url="https://api.voyageai.com/v1"
         )
 
         self.model = "voyage-4-lite"

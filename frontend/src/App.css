@@ -1,17 +1,5 @@
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #111;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./assets/grocery_bg.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  color: #fff;
-  min-height: 100vh;
-}
-
-@media (max-width: 768px) {
-  body {
-    background-attachment: scroll;
-  }
+/* Clean app root style */
+#root {
+  height: 100%;
+  width: 100%;
 }

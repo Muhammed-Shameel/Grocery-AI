@@ -7,6 +7,11 @@
 __pycache__/
 *.pyc
 *.pyo
+*.pyd
+
+# Jupyter notebooks (dev/experiment only — not needed at runtime)
+*.ipynb
+.ipynb_checkpoints/
 
 #dataset
 cv/datasets/
@@ -18,9 +23,15 @@ cv/models
 .vscode/
 .idea/
 
+PROJECT_DOCUMENTATION.md
+
 # Backend Data Pipeline & Storage (Generated data)
 backend/data_pipeline/clean/
 backend/data/chunk_factory/
+
+# Stray / accidental output paths (path-bug artifacts — not the real DB)
+/data/
+backend/backend/
 
 # Frontend
 frontend/dist/
@@ -29,3 +40,5 @@ frontend/.DS_Store
 
 # Misc
 .DS_Store
+
+tests

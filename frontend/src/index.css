@@ -1,1 +1,188 @@
 @import "tailwindcss";
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+:root {
+  color-scheme: dark;
+  --bg-canvas: #09090b;
+  --bg-surface: #121215;
+  --bg-surface-elevated: #18181c;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.16);
+}
+
+html, body {
+  background-color: #09090b;
+  color: #ededed;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Restrained, minimal scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Premium Editorial Knowledge Typography */
+.knowledge-prose {
+  font-size: 0.9375rem;
+  line-height: 1.72;
+  color: #d4d4d8;
+}
+
+.knowledge-prose p {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.knowledge-prose p:first-child {
+  margin-top: 0;
+}
+
+.knowledge-prose p:last-child {
+  margin-bottom: 0;
+}
+
+.knowledge-prose h2,
+.knowledge-prose h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #fafafa;
+  margin-top: 1.4rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.015em;
+}
+
+.knowledge-prose h4 {
+  font-size: 0.925rem;
+  font-weight: 600;
+  color: #e4e4e7;
+  margin-top: 1rem;
+  margin-bottom: 0.35rem;
+}
+
+.knowledge-prose strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.knowledge-prose ul {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.knowledge-prose ol {
+  list-style-type: decimal;
+  padding-left: 1.25rem;
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.knowledge-prose li {
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  padding-left: 0.2rem;
+}
+
+/* Tables — Editorial, Clean, Monochrome styling */
+.knowledge-prose table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  font-size: 0.84rem;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #111114;
+}
+
+.knowledge-prose th {
+  background: #18181c;
+  color: #a1a1aa;
+  font-weight: 500;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.7rem 0.9rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+  text-align: left;
+}
+
+.knowledge-prose td {
+  padding: 0.7rem 0.9rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  color: #e4e4e7;
+  font-variant-numeric: tabular-nums;
+}
+
+.knowledge-prose tr:last-child td {
+  border-bottom: none;
+}
+
+.knowledge-prose tr:hover td {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* Callout / Safety Advisory — Charcoal Bordered Box */
+.knowledge-prose blockquote {
+  margin: 1.1rem 0;
+  padding: 0.8rem 1.1rem;
+  border-radius: 8px;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1.65;
+  border-left: 2px solid #71717a;
+  background: #18181b;
+  color: #e4e4e7;
+}
+
+.knowledge-prose blockquote strong {
+  color: #fafafa;
+}
+
+/* Code */
+.knowledge-prose code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.82em;
+  padding: 0.15em 0.35em;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #f4f4f5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

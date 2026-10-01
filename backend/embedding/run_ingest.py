@@ -5,12 +5,12 @@ from ingest import Ingester
 embedder = Embedder()
 
 db = ChromaDBManager(
-    db_path="backend/data/vector_db"
+    db_path="data/vector_db"
 )
 
 (
     Ingester(
-        chunk_path="backend/data/chunk_factory/semantic_chunks.json",
+        chunk_path="data/chunk_factory/semantic_chunks.json",
         embedder=embedder,
         chroma_db=db
     )

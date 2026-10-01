@@ -3,4 +3,11 @@ uvicorn
 google-genai
 python-dotenv
 pydantic
-sentence-transformers
+voyageai
+chromadb
+jsonschema
+# SemanticChunker (offline chunking only; not used on the Render query path).
+langchain-experimental
+# sentence-transformers + langchain-huggingface removed: PyTorch does not fit
+# Render's 512 MB free tier. Embeddings now run via the Voyage API. The local
+# Embedder fallback still works in your dev .venv (install manually if needed).
