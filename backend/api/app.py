@@ -39,6 +39,10 @@ app = FastAPI(
 _default_origins = (
     "http://localhost:5173,"
     "http://127.0.0.1:5173,"
+<<<<<<< HEAD
+=======
+    "https://grocery-ai-iota.vercel.app,"
+>>>>>>> v3
     "https://grocery-ai-mkti.vercel.app"
 )
 _cors_origins = [o.strip() for o in os.getenv("BACKEND_CORS_ORIGINS", _default_origins).split(",") if o.strip()]
