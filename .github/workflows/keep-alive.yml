@@ -1,0 +1,23 @@
+name: Keep Render Backend Awake
+
+# Free-tier Render services spin down after ~15 min of inactivity. This workflow
+# sends a lightweight request to the /health endpoint on a schedule so the
+# backend stays warm (it also lazily builds the RAG pipeline once, so answers
+# are faster). NOTE: GitHub's scheduler can delay runs occasionally, so this is
+# a best-effort keep-alive, not a guarantee. For stricter uptime, use a paid
+# Render instance or a dedicated monitor (e.g. UptimeRobot, 5-min pings).
+on:
+  schedule:
+    # Every 10 minutes. Lower to */5 if you still see cold starts.
+    - cron: '*/10 * * * *'
+  workflow_dispatch: {}  # allows manual "Run workflow" from the Actions tab
+
+jobs:
+  keep-alive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping backend /health
+        run: |
+          curl -sS -o /dev/null -w "HTTP %{http_code}\n" \
+            --max-time 60 \
+            "https://grocery-ai-xvs6.onrender.com/health"
