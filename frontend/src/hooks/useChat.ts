@@ -2,9 +2,9 @@ import { useState, useEffect, useCallback } from 'react';
 import type { Message, ChatResponse, Source } from '../types/chat';
 
 // Backend base URL. Local dev reads it from frontend/.env; production reads the
-// VITE_API_URL env var configured in Vercel. Falls back to the local backend.
+// VITE_API_URL or GROCERY_AI_API_URL env var configured in Vercel. Falls back to the local backend.
 // Trailing slash is stripped so `${API_BASE}/ask` never becomes `//ask`.
-const API_BASE = (import.meta.env.GROCERY_AI_API_URL ?? 'http://127.0.0.1:8000').replace(/\/$/, '');
+const API_BASE = (import.meta.env.VITE_API_URL ?? import.meta.env.GROCERY_AI_API_URL ?? 'http://127.0.0.1:8000').replace(/\/$/, '');
 
 export const useChat = () => {
   const [messages, setMessages] = useState<Message[]>([]);
