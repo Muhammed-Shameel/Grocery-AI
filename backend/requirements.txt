@@ -6,6 +6,12 @@ pydantic
 voyageai
 chromadb
 jsonschema
+# --- Computer vision (v0.0.1) via ONNX Runtime: light enough for Render free
+# tier (no PyTorch). basic_fruit.onnx is committed; onnxruntime runs inference.
+# onnx/onnxscript are dev-only (used to export locally), NOT listed here.
+onnxruntime
+numpy
+pillow
 # SemanticChunker (offline chunking only; not used on the Render query path).
 langchain-experimental
 # sentence-transformers + langchain-huggingface removed: PyTorch does not fit
