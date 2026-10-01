@@ -34,8 +34,13 @@ app = FastAPI(
 # browser needs explicit permission. Configure it without touching code by
 # setting BACKEND_CORS_ORIGINS (comma-separated) on Render, e.g.
 #   https://your-app.vercel.app
-# Local dev defaults to the Vite dev server.
-_default_origins = "http://localhost:5173,http://127.0.0.1:5173"
+# The default below already includes the deployed Vercel frontend (safety net)
+# plus the local Vite dev servers, so it works even if the env var is unset.
+_default_origins = (
+    "http://localhost:5173,"
+    "http://127.0.0.1:5173,"
+    "https://grocery-ai-iota.vercel.app"
+)
 _cors_origins = [o.strip() for o in os.getenv("BACKEND_CORS_ORIGINS", _default_origins).split(",") if o.strip()]
 app.add_middleware(
     CORSMiddleware,
