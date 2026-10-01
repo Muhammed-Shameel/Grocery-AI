@@ -44,6 +44,44 @@ class Orchestrator:
             else:
                 effective_query = f"{visual_obs.classification}: {sanitized_question}"
 
+        # 2b. If an image was provided but CV could NOT identify it (e.g. torch
+        # unavailable on the free-tier host), AND the user only sent a generic
+        # "analyze this" placeholder with no real text, then there is nothing
+        # meaningful to retrieve. Sending the placeholder through the vector
+        # store returns an unrelated match (e.g. a random USDA article) and the
+        # LLM answers about the wrong item. Tell the user instead of guessing.
+        _placeholder_queries = {
+            "analyze this image", "analyse this image", "analyze this product",
+            "analyse this product", "analyze this", "analyse this",
+            "describe this image", "describe this product", "what is this",
+            "what is in this image", "",
+        }
+        is_placeholder = sanitized_question.strip().lower().rstrip(".") in _placeholder_queries
+        cv_failed = bool(image_data) and not (visual_obs and visual_obs.classification)
+        if is_placeholder and cv_failed:
+            logger.info(
+                "Image provided but CV unavailable and no textual query; "
+                "skipping retrieval to avoid an unrelated grounded answer."
+            )
+            return {
+                "question": question,
+                "answer": (
+                    "I received your image, but **image recognition (v0.0.1 trial) "
+                    "isn't available on this server** — the vision model runs "
+                    "locally, not on the free-tier host, so I can't tell what's in "
+                    "the photo from text alone and I won't guess.\n\n"
+                    "Try one of these instead:\n"
+                    "- **Type the item** in your question (e.g. "
+                    "\"How long do apples last?\").\n"
+                    "- Run the backend **locally** (where PyTorch + the CV model "
+                    "are installed) to use automatic image detection."
+                ),
+                "sources": [],
+                "visual_observation": visual_obs.dict() if visual_obs else None,
+                "grounded": False,
+                "subject": subject,
+            }
+
         # 3. Retrieval with optional subject filtering
         context, results = self.retrieval_agent.retrieve_and_build_context(effective_query, top_k=5, subject=subject)
 
